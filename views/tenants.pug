@@ -1,0 +1,100 @@
+extends base
+
+block title
+    title Brevard Rentals
+
+block content
+    main 
+        section#hero-tenants 
+            .overlay
+            img.hero-background(src="/img/tenants-desktop.jpg", alt="")
+            .hero-tenants-block
+                h1 Find your rental today 
+                p A knowledgable team to walk you through the entire rental process, hassle-free.
+                a(href="#rental-listings").hero-cta Find a rental
+        
+        section#rental-process 
+            .rental-process-block 
+                h3 The #[span.gray-heading__accent rental process ]
+                .rental-steps 
+                    .rental-steps__card 
+                        svg: use(xlink:href="img/bpms-sprite.svg#house")
+                        h3 1. define property specifications 
+                        p The first step to finding your next residence is to define a particular area and to view some properties within your price range.
+                    .rental-steps__card 
+                        svg: use(xlink:href="img/bpms-sprite.svg#application")
+                        h3 2. rental application
+                        p Once a property is identified, you will need to obtain and fill out the application and submit with appropriate application fees and documentation required. Current rental history and income verification will be obtained during the application process.
+                    .rental-steps__card 
+                        svg: use(xlink:href="img/bpms-sprite.svg#money")
+                        h3 3. security deposit 
+                        p If your application is accepted by the Landlord, you will then need to place the security deposit and sign a property reservation to hold the property off the market until your anticipated move-in date.
+                    .rental-steps__card 
+                        svg: use(xlink:href="img/bpms-sprite.svg#contract")
+                        h3 4. lease preparation
+                        p The lease will  be prepared by an attorney and sent for review by tenant and landlord and signed as a binding document.
+                    .rental-steps__card 
+                        svg: use(xlink:href="img/bpms-sprite.svg#key")
+                        h3 5. move in day 
+                        p Once all monies due are paid and the lease is fully executed, you will then be able to obtain the keys/access to the property and begin your move in.
+
+        section#tenant-faqs 
+            .tenant-faqs-block
+                h3 Tenant FAQs 
+                .tenant-faqs 
+                    .faq
+                        .question 
+                            h4 Can I make any changes to the property?
+                            svg: use(xlink:href="img/bpms-sprite.svg#right-chevron")
+                        .answer
+                            p Any changes to a property MUST be approved in writing prior
+                    .faq
+                        .question 
+                            h4 What maintenance issues are an emergency?
+                            svg: use(xlink:href="img/bpms-sprite.svg#right-chevron")
+                        .answer
+                            p Emergency maintenance requests consist of water flooding from plumbing or roof, HVAC system not working, or backed up plumbing in the entire house
+                    .faq
+                        .question 
+                            h4 What do I do if the property needs a repair?
+                            svg: use(xlink:href="img/bpms-sprite.svg#right-chevron")
+                        .answer
+                            p Any maintenance request MUST be reported to your property manager
+                    .faq
+                        .question 
+                            h4 What do I do to renew my lease?
+                            svg: use(xlink:href="img/bpms-sprite.svg#right-chevron")
+                        .answer
+                            p If you plan to renew your lease, you must let your property manager know at least 30 days in advance from lease end date
+                    .faq
+                        .question 
+                            h4 How do I get the utilities changed to my name?
+                            svg: use(xlink:href="img/bpms-sprite.svg#right-chevron")
+                        .answer
+                            p Utility companies are to be called directly for service start requests. You will need a copy of your lease. For P.O. boxes you will need to take a copy of your lease to your local post office
+                    .faq
+                        .question 
+                            h4 What are my responsibilities?
+                            svg: use(xlink:href="img/bpms-sprite.svg#right-chevron")
+                        .answer
+                            p Tenant responsibilities for maintenance will be found in your lease under the maintenance section
+                    .faq
+                        .question 
+                            h4 What payment methods are accepted for rent?
+                            svg: use(xlink:href="img/bpms-sprite.svg#right-chevron")
+                        .answer
+                            p Rental payments can be made by cashier&apos;s check, money order, bill pay though your bank, credit card, debit card or direct bank draft
+                    .faq
+                        .question 
+                            h4 What if I notice a problem right after moving in?
+                            svg: use(xlink:href="img/bpms-sprite.svg#right-chevron")
+                        .answer
+                            p Tenants will be given a property condition report to be filed out and returned within 10 days of occupancy to note any immediate problems or deficiencies that currently exist
+        section#rental-listings 
+            .rental-listings-block 
+                h3 Our available properties 
+                p If you don't see a rental you're interested in, we can still help you find other available properties! Contact us if you'd like help with your rental search.
+                .properties
+                    if listings.length == 0
+                        p No properties currently available
+        script(src='/js/tenants.js')

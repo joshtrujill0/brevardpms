@@ -1,0 +1,6 @@
+/node_modules
+/sass
+config.env
+nodemon.json
+**/.DS_Store
+deployment.txt
