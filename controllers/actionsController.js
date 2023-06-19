@@ -1,7 +1,13 @@
 const nodemailer = require("nodemailer");
 const dotenv = require("dotenv");
 
-dotenv.config({ path: "./config.env" });
+//##################### Configure .env File for application #####################
+//User for Ubuntu server
+dotenv.config({ path: "/home/josh/environment-variables/config.env" });
+
+//Use for localhost
+// dotenv.config({ path: "./config.env" });
+//##################### Configure .env File for application #####################
 
 const email = process.env.EMAIL;
 
