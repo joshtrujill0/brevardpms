@@ -58,6 +58,7 @@ a:link, a:visited {
 
 html {
   box-sizing: border-box;
+  scroll-padding-top: var(--scroll-padding, 8rem);
   font-size: 62.5%; }
   @media (max-width: 43.75em) {
     html {
@@ -65,7 +66,7 @@ html {
 
 body {
   display: grid;
-  grid-template-columns: [full-start] minmax(4rem, 1fr) [content-start] repeat(8, [col-start] minmax(6rem, 18rem) [col-end]) [content-end] minmax(4rem, 1fr) [full-end];
+  grid-template-columns: [full-start] minmax(1.8rem, 1fr) [content-start] repeat(8, [col-start] minmax(4rem, 18rem) [col-end]) [content-end] minmax(1.8rem, 1fr) [full-end];
   text-rendering: optimizeSpeed;
   font-family: Roboto, sans-serif;
   font-weight: 300;
@@ -116,6 +117,9 @@ header {
   padding: 1rem 8.5rem;
   display: flex;
   align-items: center; }
+  @media (max-width: 43.75em) {
+    header {
+      display: none; } }
 
 .header-nav {
   display: flex;
@@ -132,7 +136,7 @@ header {
   grid-gap: 2rem; }
 
 .menu__item {
-  font-size: clamp(12px, 1.6rem, 6.5rem);
+  font-size: clamp(12px, 1.6rem, 6rem);
   font-weight: 400;
   color: #f9f9f9;
   font-size: 1.6rem;
@@ -154,9 +158,9 @@ header {
 footer {
   background-color: #20cbb2;
   display: grid;
-  grid-template-columns: [full-start] minmax(4rem, 1fr) [content-start] repeat(8, [col-start] minmax(6rem, 18rem) [col-end]) [content-end] minmax(4rem, 1fr) [full-end];
+  grid-template-columns: [full-start] minmax(1.8rem, 1fr) [content-start] repeat(8, [col-start] minmax(4rem, 18rem) [col-end]) [content-end] minmax(1.8rem, 1fr) [full-end];
   grid-column: full-start / full-end;
-  padding: 3rem; }
+  padding: 3rem 0rem; }
 
 .main {
   grid-column: content-start / content-end;
@@ -176,7 +180,7 @@ footer {
 .company {
   padding-right: 5rem; }
   .company img {
-    height: 22rem;
+    height: 16rem;
     margin-bottom: 1rem; }
   .company p {
     color: #f9f9f9;
@@ -186,9 +190,7 @@ footer {
       display: flex;
       align-items: center;
       padding-right: 0rem;
-      justify-content: center; }
-      .company p {
-        padding: 1rem; } }
+      justify-content: center; } }
   @media (max-width: 25em) {
     .company {
       flex-direction: column;
@@ -209,13 +211,16 @@ footer {
   .footer-navigation {
     margin: 3rem 0rem;
     display: flex;
+    flex-direction: column;
+    gap: 2rem;
     align-items: center;
     justify-content: center; }
     .footer-navigation ul {
       display: flex;
       align-items: center;
-      gap: 3rem;
-      margin-left: 2rem; }
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 3rem; }
     .footer-navigation h4 {
       margin-bottom: 0; } }
 
@@ -244,6 +249,14 @@ footer {
     justify-content: center;
     gap: 3rem; } }
 
+@media (max-width: 37.5em) {
+  .business-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center; } }
+
 .realtor-disclaimer {
   grid-column: content-start / content-end;
   padding: 2rem 0rem;
@@ -268,7 +281,7 @@ footer {
 #benefits {
   grid-column: full-start / full-end;
   display: grid;
-  grid-template-columns: [full-start] minmax(4rem, 1fr) [content-start] repeat(8, [col-start] minmax(6rem, 18rem) [col-end]) [content-end] minmax(4rem, 1fr) [full-end];
+  grid-template-columns: [full-start] minmax(1.8rem, 1fr) [content-start] repeat(8, [col-start] minmax(4rem, 18rem) [col-end]) [content-end] minmax(1.8rem, 1fr) [full-end];
   background-color: #f9f9f9;
   padding: 4rem 0rem; }
 
@@ -276,7 +289,7 @@ footer {
   grid-column: content-start / content-end;
   text-align: center; }
   .benefits-block h3 {
-    font-size: clamp(12px, 3.4rem, 6.5rem);
+    font-size: clamp(12px, 3.4rem, 6rem);
     font-weight: 400;
     color: #4a4a4a;
     font-size: 3.4rem;
@@ -318,7 +331,7 @@ footer {
     fill: #20cbb2;
     width: 4rem; }
   .card__text {
-    font-size: clamp(12px, 1.6rem, 6.5rem);
+    font-size: clamp(12px, 1.6rem, 6rem);
     font-weight: 100;
     color: #4a4a4a;
     font-size: 1.6rem;
@@ -328,7 +341,7 @@ footer {
 
 #contact {
   display: grid;
-  grid-template-columns: [full-start] minmax(4rem, 1fr) [content-start] repeat(8, [col-start] minmax(6rem, 18rem) [col-end]) [content-end] minmax(4rem, 1fr) [full-end];
+  grid-template-columns: [full-start] minmax(1.8rem, 1fr) [content-start] repeat(8, [col-start] minmax(4rem, 18rem) [col-end]) [content-end] minmax(1.8rem, 1fr) [full-end];
   grid-column: full-start / full-end;
   padding: 4rem 0rem;
   background-image: linear-gradient(to right, rgba(19, 134, 116, 0.8), rgba(19, 134, 116, 0.8)), url(../img/contact-desktop.jpg);
@@ -342,7 +355,7 @@ footer {
   flex-direction: column;
   justify-content: center; }
   .contact-block h3 {
-    font-size: clamp(12px, 3.4rem, 6.5rem);
+    font-size: clamp(12px, 3.4rem, 6rem);
     font-weight: 400;
     color: #f9f9f9;
     font-size: 3.4rem;
@@ -351,7 +364,7 @@ footer {
     text-align: center;
     margin-bottom: 2rem; }
   .contact-block p {
-    font-size: clamp(12px, 1.6rem, 6.5rem);
+    font-size: clamp(12px, 1.6rem, 6rem);
     font-weight: 100;
     color: #f9f9f9;
     font-size: 1.6rem;
@@ -378,22 +391,22 @@ footer {
       text-transform: capitalize; }
     .contact-block form textarea {
       border: 2px solid #fff;
-      background-color: transparent;
+      background-color: rgba(255, 255, 255, 0.5);
       padding: 1rem;
       resize: none;
       border-radius: 0.5rem; }
       .contact-block form textarea::placeholder {
-        color: #f9f9f9; }
+        color: #626060; }
       .contact-block form textarea:focus {
         border: 2px solid #000;
         background-color: rgba(255, 255, 255, 0.6); }
     .contact-block form input {
       border: 2px solid #fff;
-      background-color: transparent;
+      background-color: rgba(255, 255, 255, 0.5);
       padding: 1rem;
       border-radius: 0.5rem; }
       .contact-block form input::placeholder {
-        color: #f9f9f9; }
+        color: #626060; }
       .contact-block form input:not(:last-of-type) {
         margin-bottom: 1rem; }
       .contact-block form input:focus {
@@ -414,7 +427,7 @@ footer {
 
 #hero {
   display: grid;
-  grid-template-columns: [full-start] minmax(4rem, 1fr) [content-start] repeat(8, [col-start] minmax(6rem, 18rem) [col-end]) [content-end] minmax(4rem, 1fr) [full-end];
+  grid-template-columns: [full-start] minmax(1.8rem, 1fr) [content-start] repeat(8, [col-start] minmax(4rem, 18rem) [col-end]) [content-end] minmax(1.8rem, 1fr) [full-end];
   grid-column: full-start / full-end;
   background-color: #f9f9f9;
   height: 80vh;
@@ -439,7 +452,7 @@ footer {
       align-items: center;
       text-align: center; } }
   .hero-block__keyword {
-    font-size: clamp(12px, 1.6rem, 6.5rem);
+    font-size: clamp(12px, 1.6rem, 6rem);
     font-weight: 400;
     color: #f9f9f9;
     font-size: 1.6rem;
@@ -449,17 +462,17 @@ footer {
     margin-bottom: 3rem;
     font-size: 1.2rem; }
   .hero-block__main-heading {
-    font-size: clamp(12px, 6.5rem, 6.5rem);
+    font-size: clamp(12px, 6rem, 6rem);
     font-weight: 700;
     color: #f9f9f9;
-    font-size: 6.5rem;
+    font-size: 6rem;
     font-weight: 700;
     color: #f9f9f9;
     line-height: 1;
     text-transform: capitalize;
     margin-bottom: 4rem; }
   .hero-block__slogan {
-    font-size: clamp(12px, 2rem, 6.5rem);
+    font-size: clamp(12px, 2rem, 6rem);
     font-weight: 100;
     color: #f9f9f9;
     font-size: 2rem;
@@ -481,7 +494,7 @@ footer {
 
 #landlord-faq {
   display: grid;
-  grid-template-columns: [full-start] minmax(4rem, 1fr) [content-start] repeat(8, [col-start] minmax(6rem, 18rem) [col-end]) [content-end] minmax(4rem, 1fr) [full-end];
+  grid-template-columns: [full-start] minmax(1.8rem, 1fr) [content-start] repeat(8, [col-start] minmax(4rem, 18rem) [col-end]) [content-end] minmax(1.8rem, 1fr) [full-end];
   grid-column: full-start / full-end;
   background-color: #f9f9f9;
   padding: 4rem 0rem; }
@@ -490,7 +503,7 @@ footer {
   grid-column: content-start / content-end;
   text-align: center; }
   .landlord-faqs-block h3 {
-    font-size: clamp(12px, 3.4rem, 6.5rem);
+    font-size: clamp(12px, 3.4rem, 6rem);
     font-weight: 400;
     color: #4a4a4a;
     font-size: 3.4rem;
@@ -501,7 +514,7 @@ footer {
 .landlord-faqs {
   display: grid;
   grid-template-columns: repeat(2, 1fr); }
-  @media (max-width: 37.5em) {
+  @media (max-width: 50em) {
     .landlord-faqs {
       grid-template-columns: 1fr; } }
 
@@ -511,28 +524,30 @@ footer {
   border-radius: 1rem;
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
   padding: 2.2rem 1rem;
-  margin: 1rem;
+  margin: 0.8rem;
   cursor: pointer; }
 
 .question {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  text-align: left; }
   .question h3 {
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #4a4a4a;
     margin-right: auto;
     margin-bottom: 0;
     margin-left: 0.5rem; }
   .question svg {
     width: 1.4rem;
-    transition: transform 0.3s; }
+    transition: transform 0.3s;
+    margin-left: 0.5rem; }
 
 .answer {
   max-height: 0rem;
   overflow: hidden;
   transition: all 0.5s; }
   .answer P {
-    font-size: clamp(12px, 1.6rem, 6.5rem);
+    font-size: clamp(12px, 1.6rem, 6rem);
     font-weight: 100;
     color: #4a4a4a;
     font-size: 1.6rem;
@@ -549,7 +564,7 @@ footer {
 
 #more-benefits {
   display: grid;
-  grid-template-columns: [full-start] minmax(4rem, 1fr) [content-start] repeat(8, [col-start] minmax(6rem, 18rem) [col-end]) [content-end] minmax(4rem, 1fr) [full-end];
+  grid-template-columns: [full-start] minmax(1.8rem, 1fr) [content-start] repeat(8, [col-start] minmax(4rem, 18rem) [col-end]) [content-end] minmax(1.8rem, 1fr) [full-end];
   grid-column: full-start / full-end;
   padding: 4rem 0rem;
   background-color: #fff; }
@@ -560,7 +575,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 50em) {
     .more-benefits__photos {
       grid-column: 2 / 10;
       grid-row: 2/ 2;
@@ -571,14 +586,14 @@ footer {
 .more-benefits__information {
   grid-column: col-start 5 / content-end; }
   .more-benefits__information h3 {
-    font-size: clamp(12px, 3.4rem, 6.5rem);
+    font-size: clamp(12px, 3.4rem, 6rem);
     font-weight: 400;
     color: #4a4a4a;
     font-size: 3.4rem;
     font-weight: 400;
     color: #4a4a4a;
     text-align: center; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 50em) {
     .more-benefits__information {
       grid-column: 2 / 10;
       grid-row: 1/ 1;
@@ -597,7 +612,7 @@ footer {
     width: 2.3rem;
     fill: #138674; }
   .benefits__text {
-    font-size: clamp(12px, 1.6rem, 6.5rem);
+    font-size: clamp(12px, 1.6rem, 6rem);
     font-weight: 100;
     color: #4a4a4a;
     font-size: 1.6rem;
@@ -607,7 +622,7 @@ footer {
 
 #reviews {
   display: grid;
-  grid-template-columns: [full-start] minmax(4rem, 1fr) [content-start] repeat(8, [col-start] minmax(6rem, 18rem) [col-end]) [content-end] minmax(4rem, 1fr) [full-end];
+  grid-template-columns: [full-start] minmax(1.8rem, 1fr) [content-start] repeat(8, [col-start] minmax(4rem, 18rem) [col-end]) [content-end] minmax(1.8rem, 1fr) [full-end];
   grid-column: full-start / full-end;
   padding: 4rem 0rem;
   background-color: #f9f9f9; }
@@ -616,7 +631,7 @@ footer {
   grid-column: content-start / content-end;
   text-align: center; }
   .reviews-block h3 {
-    font-size: clamp(12px, 3.4rem, 6.5rem);
+    font-size: clamp(12px, 3.4rem, 6rem);
     font-weight: 400;
     color: #4a4a4a;
     font-size: 3.4rem;
@@ -628,14 +643,14 @@ footer {
 .review-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 4rem; }
+  grid-gap: 2rem; }
   @media (max-width: 56.25em) {
     .review-cards {
-      grid-gap: 3rem; } }
-  @media (max-width: 37.5em) {
+      grid-gap: 2rem; } }
+  @media (max-width: 43.75em) {
     .review-cards {
       grid-gap: 1rem; } }
-  @media (max-width: 31.25em) {
+  @media (max-width: 50em) {
     .review-cards {
       grid-template-columns: 1fr; } }
 
@@ -656,7 +671,7 @@ footer {
     font-weight: 700;
     margin-bottom: 2rem; }
   .review__text {
-    font-size: clamp(12px, 1.6rem, 6.5rem);
+    font-size: clamp(12px, 1.6rem, 6rem);
     font-weight: 100;
     color: #4a4a4a;
     font-size: 1.6rem;
@@ -670,7 +685,7 @@ footer {
 
 #team {
   display: grid;
-  grid-template-columns: [full-start] minmax(4rem, 1fr) [content-start] repeat(8, [col-start] minmax(6rem, 18rem) [col-end]) [content-end] minmax(4rem, 1fr) [full-end];
+  grid-template-columns: [full-start] minmax(1.8rem, 1fr) [content-start] repeat(8, [col-start] minmax(4rem, 18rem) [col-end]) [content-end] minmax(1.8rem, 1fr) [full-end];
   grid-column: full-start / full-end;
   padding: 4rem 0rem;
   background-color: #d8fff9; }
@@ -679,21 +694,21 @@ footer {
   grid-column: content-start / col-end 4;
   margin-right: 4rem; }
   .team__information h3 {
-    font-size: clamp(12px, 3.4rem, 6.5rem);
+    font-size: clamp(12px, 3.4rem, 6rem);
     font-weight: 400;
     color: #4a4a4a;
     font-size: 3.4rem;
     font-weight: 400;
     color: #4a4a4a; }
   .team__information p {
-    font-size: clamp(12px, 1.6rem, 6.5rem);
+    font-size: clamp(12px, 1.6rem, 6rem);
     font-weight: 100;
     color: #4a4a4a;
     font-size: 1.6rem;
     font-weight: 100;
     color: #4a4a4a;
     margin: 2rem 0rem 4rem 0rem; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 50em) {
     .team__information {
       grid-column: 2 / 10;
       grid-row: 1/ 1;
@@ -708,7 +723,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 50em) {
     .team__photo {
       grid-column: 2 / 10;
       grid-row: 2/ 2; }
@@ -737,13 +752,13 @@ footer {
 
 #about-brevard {
   display: grid;
-  grid-template-columns: [full-start] minmax(4rem, 1fr) [content-start] repeat(8, [col-start] minmax(6rem, 18rem) [col-end]) [content-end] minmax(4rem, 1fr) [full-end];
+  grid-template-columns: [full-start] minmax(1.8rem, 1fr) [content-start] repeat(8, [col-start] minmax(4rem, 18rem) [col-end]) [content-end] minmax(1.8rem, 1fr) [full-end];
   grid-column: full-start / full-end;
   background-color: #d8fff9; }
 
 .about-brevard-block {
   display: grid;
-  grid-template-columns: [full-start] minmax(4rem, 1fr) [content-start] repeat(8, [col-start] minmax(6rem, 18rem) [col-end]) [content-end] minmax(4rem, 1fr) [full-end];
+  grid-template-columns: [full-start] minmax(1.8rem, 1fr) [content-start] repeat(8, [col-start] minmax(4rem, 18rem) [col-end]) [content-end] minmax(1.8rem, 1fr) [full-end];
   grid-column: full-start / full-end;
   height: fit-content; }
 
@@ -814,7 +829,7 @@ footer {
 
 #hero-sales {
   display: grid;
-  grid-template-columns: [full-start] minmax(4rem, 1fr) [content-start] repeat(8, [col-start] minmax(6rem, 18rem) [col-end]) [content-end] minmax(4rem, 1fr) [full-end];
+  grid-template-columns: [full-start] minmax(1.8rem, 1fr) [content-start] repeat(8, [col-start] minmax(4rem, 18rem) [col-end]) [content-end] minmax(1.8rem, 1fr) [full-end];
   grid-column: full-start / full-end;
   position: relative;
   background-color: #f9f9f9;
@@ -832,17 +847,17 @@ footer {
       align-items: center;
       text-align: center; } }
   .hero-sales-block h1 {
-    font-size: clamp(12px, 6.5rem, 6.5rem);
+    font-size: clamp(12px, 6rem, 6rem);
     font-weight: 700;
     color: #f9f9f9;
-    font-size: 6.5rem;
+    font-size: 6rem;
     font-weight: 700;
     color: #f9f9f9;
     line-height: 1;
     text-transform: capitalize;
     margin-bottom: 4rem; }
   .hero-sales-block p {
-    font-size: clamp(12px, 2rem, 6.5rem);
+    font-size: clamp(12px, 2rem, 6rem);
     font-weight: 100;
     color: #f9f9f9;
     font-size: 2rem;
@@ -853,7 +868,7 @@ footer {
 
 #meet-the-team {
   display: grid;
-  grid-template-columns: [full-start] minmax(4rem, 1fr) [content-start] repeat(8, [col-start] minmax(6rem, 18rem) [col-end]) [content-end] minmax(4rem, 1fr) [full-end];
+  grid-template-columns: [full-start] minmax(1.8rem, 1fr) [content-start] repeat(8, [col-start] minmax(4rem, 18rem) [col-end]) [content-end] minmax(1.8rem, 1fr) [full-end];
   grid-column: full-start / full-end;
   background-color: #f9f9f9;
   padding: 4rem 0rem; }
@@ -862,7 +877,7 @@ footer {
   grid-column: content-start / content-end;
   text-align: center; }
   .meet-the-team-block h3 {
-    font-size: clamp(12px, 3.4rem, 6.5rem);
+    font-size: clamp(12px, 3.4rem, 6rem);
     font-weight: 400;
     color: #4a4a4a;
     font-size: 3.4rem;
@@ -872,7 +887,7 @@ footer {
 
 #hero-tenants {
   display: grid;
-  grid-template-columns: [full-start] minmax(4rem, 1fr) [content-start] repeat(8, [col-start] minmax(6rem, 18rem) [col-end]) [content-end] minmax(4rem, 1fr) [full-end];
+  grid-template-columns: [full-start] minmax(1.8rem, 1fr) [content-start] repeat(8, [col-start] minmax(4rem, 18rem) [col-end]) [content-end] minmax(1.8rem, 1fr) [full-end];
   grid-column: full-start / full-end;
   position: relative;
   background-color: #f9f9f9;
@@ -890,17 +905,17 @@ footer {
       align-items: center;
       text-align: center; } }
   .hero-tenants-block h1 {
-    font-size: clamp(12px, 6.5rem, 6.5rem);
+    font-size: clamp(12px, 6rem, 6rem);
     font-weight: 700;
     color: #f9f9f9;
-    font-size: 6.5rem;
+    font-size: 6rem;
     font-weight: 700;
     color: #f9f9f9;
     line-height: 1;
     text-transform: capitalize;
     margin-bottom: 4rem; }
   .hero-tenants-block p {
-    font-size: clamp(12px, 2rem, 6.5rem);
+    font-size: clamp(12px, 2rem, 6rem);
     font-weight: 100;
     color: #f9f9f9;
     font-size: 2rem;
@@ -911,7 +926,7 @@ footer {
 
 #rental-listings {
   display: grid;
-  grid-template-columns: [full-start] minmax(4rem, 1fr) [content-start] repeat(8, [col-start] minmax(6rem, 18rem) [col-end]) [content-end] minmax(4rem, 1fr) [full-end];
+  grid-template-columns: [full-start] minmax(1.8rem, 1fr) [content-start] repeat(8, [col-start] minmax(4rem, 18rem) [col-end]) [content-end] minmax(1.8rem, 1fr) [full-end];
   grid-column: full-start / full-end;
   padding: 4rem 0rem;
   background-color: #f9f9f9;
@@ -921,7 +936,7 @@ footer {
   grid-column: content-start / content-end;
   text-align: center; }
   .rental-listings-block h3 {
-    font-size: clamp(12px, 3.4rem, 6.5rem);
+    font-size: clamp(12px, 3.4rem, 6rem);
     font-weight: 400;
     color: #4a4a4a;
     font-size: 3.4rem;
@@ -930,7 +945,7 @@ footer {
     text-transform: capitalize;
     margin-bottom: 1rem; }
   .rental-listings-block p {
-    font-size: clamp(12px, 1.6rem, 6.5rem);
+    font-size: clamp(12px, 1.6rem, 6rem);
     font-weight: 100;
     color: #4a4a4a;
     font-size: 1.6rem;
@@ -940,7 +955,7 @@ footer {
     margin-bottom: 3rem; }
 
 .properties p {
-  font-size: clamp(12px, 2rem, 6.5rem);
+  font-size: clamp(12px, 2rem, 6rem);
   font-weight: 700;
   color: #4a4a4a;
   font-size: 2rem;
@@ -951,7 +966,7 @@ footer {
 
 #rental-process {
   display: grid;
-  grid-template-columns: [full-start] minmax(4rem, 1fr) [content-start] repeat(8, [col-start] minmax(6rem, 18rem) [col-end]) [content-end] minmax(4rem, 1fr) [full-end];
+  grid-template-columns: [full-start] minmax(1.8rem, 1fr) [content-start] repeat(8, [col-start] minmax(4rem, 18rem) [col-end]) [content-end] minmax(1.8rem, 1fr) [full-end];
   grid-column: full-start / full-end;
   background-color: #f9f9f9;
   padding: 4rem 0rem; }
@@ -960,7 +975,7 @@ footer {
   grid-column: content-start / content-end;
   text-align: center; }
   .rental-process-block h3 {
-    font-size: clamp(12px, 3.4rem, 6.5rem);
+    font-size: clamp(12px, 3.4rem, 6rem);
     font-weight: 400;
     color: #4a4a4a;
     font-size: 3.4rem;
@@ -972,13 +987,13 @@ footer {
 .rental-steps {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 3rem; }
-  @media (max-width: 37.5em) {
+  column-gap: 1.5rem; }
+  @media (max-width: 50em) {
     .rental-steps {
       grid-template-columns: 1fr; } }
   .rental-steps__card {
     background-color: #fff;
-    padding: 3rem;
+    padding: 3rem 1.2rem;
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
     border: 2px solid #a9a9a9;
     border-radius: 2rem;
@@ -989,7 +1004,7 @@ footer {
     .rental-steps__card:not(:last-of-type) {
       margin-bottom: 2rem; }
     .rental-steps__card p {
-      font-size: clamp(12px, 1.6rem, 6.5rem);
+      font-size: clamp(12px, 1.6rem, 6rem);
       font-weight: 100;
       color: #4a4a4a;
       font-size: 1.6rem;
@@ -1000,7 +1015,7 @@ footer {
       fill: #20cbb2;
       width: 4rem; }
     .rental-steps__card h3 {
-      font-size: clamp(12px, 2rem, 6.5rem);
+      font-size: clamp(12px, 2rem, 6rem);
       font-weight: 700;
       color: #4a4a4a;
       font-size: 2rem;
@@ -1011,7 +1026,7 @@ footer {
 
 #tenant-faqs {
   display: grid;
-  grid-template-columns: [full-start] minmax(4rem, 1fr) [content-start] repeat(8, [col-start] minmax(6rem, 18rem) [col-end]) [content-end] minmax(4rem, 1fr) [full-end];
+  grid-template-columns: [full-start] minmax(1.8rem, 1fr) [content-start] repeat(8, [col-start] minmax(4rem, 18rem) [col-end]) [content-end] minmax(1.8rem, 1fr) [full-end];
   grid-column: full-start / full-end;
   padding: 4rem 0rem;
   background-color: #d8fff9; }
@@ -1020,7 +1035,7 @@ footer {
   grid-column: content-start / content-end;
   text-align: center; }
   .tenant-faqs-block h3 {
-    font-size: clamp(12px, 3.4rem, 6.5rem);
+    font-size: clamp(12px, 3.4rem, 6rem);
     font-weight: 400;
     color: #4a4a4a;
     font-size: 3.4rem;
@@ -1029,7 +1044,7 @@ footer {
     margin-bottom: 3rem; }
 
 .question h4 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #4a4a4a;
   font-weight: 400;
   margin-right: auto;
@@ -1040,6 +1055,6 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   text-align: left; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 50em) {
     .tenant-faqs {
       grid-template-columns: 1fr; } }

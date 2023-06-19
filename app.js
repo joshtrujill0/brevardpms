@@ -9,7 +9,9 @@ app.set("view engine", "pug");
 app.set("views", `${__dirname}/views`);
 
 const viewRouter = require("./routes/viewRoutes");
+const actionsRouter = require("./routes/actionsRoutes");
 
 app.use("/", viewRouter);
+app.use("/api/v1/contact", actionsRouter);
 
 module.exports = app;
