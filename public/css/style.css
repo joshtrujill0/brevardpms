@@ -191,7 +191,7 @@ footer {
       align-items: center;
       padding-right: 0rem;
       justify-content: center; } }
-  @media (max-width: 25em) {
+  @media (max-width: 37.5em) {
     .company {
       flex-direction: column;
       text-align: center; } }
@@ -277,6 +277,21 @@ footer {
     font-size: clamp(9px, 1rem, 16px); }
     .legal a:hover {
       color: #d3b107; }
+
+.attention {
+  grid-column: full-start / full-end;
+  text-align: center;
+  padding: 0.4rem;
+  background-color: #138674; }
+  .attention p {
+    font-size: clamp(12px, 1.6rem, 6rem);
+    font-weight: 100;
+    color: #4a4a4a;
+    font-size: 1.6rem;
+    font-weight: 100;
+    color: #4a4a4a;
+    color: #f9f9f9;
+    font-weight: 400; }
 
 #benefits {
   grid-column: full-start / full-end;
@@ -584,7 +599,8 @@ footer {
         width: 50%; } }
 
 .more-benefits__information {
-  grid-column: col-start 5 / content-end; }
+  grid-column: col-start 5 / content-end;
+  padding: 0rem 3rem; }
   .more-benefits__information h3 {
     font-size: clamp(12px, 3.4rem, 6rem);
     font-weight: 400;
@@ -607,7 +623,7 @@ footer {
   display: flex;
   padding: 1.2rem;
   align-items: center;
-  justify-content: center; }
+  justify-content: flex-start; }
   .benefits__icon {
     width: 2.3rem;
     fill: #138674; }
@@ -760,7 +776,8 @@ footer {
   display: grid;
   grid-template-columns: [full-start] minmax(1.8rem, 1fr) [content-start] repeat(8, [col-start] minmax(4rem, 18rem) [col-end]) [content-end] minmax(1.8rem, 1fr) [full-end];
   grid-column: full-start / full-end;
-  height: fit-content; }
+  height: fit-content;
+  padding: 4rem 0rem; }
 
 .brevard-map {
   grid-column: content-start / col-end 4;
@@ -805,9 +822,13 @@ footer {
       grid-column: 2 / 10;
       grid-row: 1/ 1; } }
   .brevard-content h3 {
-    font-size: 4rem;
-    font-weight: 300;
+    font-size: clamp(12px, 3.4rem, 6rem);
+    font-weight: 400;
     color: #4a4a4a;
+    font-size: 3.4rem;
+    font-weight: 400;
+    color: #4a4a4a;
+    padding-bottom: 1rem;
     align-self: flex-start; }
   .brevard-content p {
     font-size: 1.7rem;

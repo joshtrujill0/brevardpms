@@ -12,11 +12,11 @@ html(lang="en-US")
         block title
 
     body
+        include _attention
         include _header
         block content  
         include _footer
 
-        //- script(src='/js/bundle.js')
         script(src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js")
         script(src='/js/scroll.js')
 
