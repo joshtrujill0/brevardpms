@@ -93,8 +93,24 @@ block content
         section#rental-listings 
             .rental-listings-block 
                 h3 Our available properties 
-                p If you don't see a rental you're interested in, we can still help you find other available properties! Contact us if you'd like help with your rental search.
+                p.property-disclaimer If you don't see a rental you're interested in, we can still help you find other available properties! Contact us if you'd like help with your rental search.
                 .properties
                     if listings.length == 0
-                        p No properties currently available
+                        p.no-properties No properties currently available
+                    .property-cards-block
+                        for listing in listings
+                            .property-card
+                                img(src=listing.adpic_link)
+                                .property-card__info 
+                                    svg: use(xlink:href="img/bpms-sprite.svg#pin")
+                                    p.city= listing.city
+                                    p= `${listing.bedrooms} bedrooms`
+                                    p= `${listing.bathrooms} bathrooms`
+                                    p= `${listing.sqft} SQFT`
+                                .property-card__desc 
+                                    p= listing.address 
+                                    p.address= listing.class_ad
+                                a.apply(href="#"): span Apply Now
+
+                        
         script(src='/js/tenants.js')

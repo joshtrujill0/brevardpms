@@ -965,17 +965,18 @@ footer {
     color: #4a4a4a;
     text-transform: capitalize;
     margin-bottom: 1rem; }
-  .rental-listings-block p {
-    font-size: clamp(12px, 1.6rem, 6rem);
-    font-weight: 100;
-    color: #4a4a4a;
-    font-size: 1.6rem;
-    font-weight: 100;
-    color: #4a4a4a;
-    font-style: italic;
-    margin-bottom: 3rem; }
 
-.properties p {
+.property-disclaimer {
+  font-size: clamp(12px, 1.6rem, 6rem);
+  font-weight: 100;
+  color: #4a4a4a;
+  font-size: 1.6rem;
+  font-weight: 100;
+  color: #4a4a4a;
+  font-style: italic;
+  margin-bottom: 3rem; }
+
+.no-properties {
   font-size: clamp(12px, 2rem, 6rem);
   font-weight: 700;
   color: #4a4a4a;
@@ -984,6 +985,38 @@ footer {
   color: #4a4a4a;
   font-style: normal;
   text-transform: capitalize; }
+
+.property-cards-block {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem; }
+
+.property-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #e7e7e7; }
+  .property-card img {
+    aspect-ratio: 14 / 9; }
+  .property-card__info {
+    display: flex; }
+    .property-card__info svg {
+      height: 1rem; }
+  .property-card__desc {
+    flex-grow: 1; }
+
+.apply {
+  height: 4rem;
+  background-color: #4bba7e; }
+
+.address {
+  font-style: normal;
+  font-size: clamp(12px, 1.6rem, 6rem);
+  font-weight: 100;
+  color: #4a4a4a;
+  font-size: 1.6rem;
+  font-weight: 100;
+  color: #4a4a4a; }
 
 #rental-process {
   display: grid;
