@@ -1,14 +1,14 @@
 header 
-    nav.header-nav
-        .logo
-            a(href="/"): img(src="/img/main-logo.png", alt="brevard management and sales logo")             
-        .menu
-            ul(role="list")
-                li: a(href="/"): span.menu__item  Home
-                li: a(href="/tenants"): span.menu__item Tenants
-                li: a(href="/sales"): span.menu__item Sales
-                li: a(href="#"): span.menu__item Login
-                li: a.menu__cta(href="/#contact"): span Contact
+    a(href="/"): img(src="/img/main-logo.png", alt="brevard management and sales logo")
+    button.mobile-toggle(aria-controls="primary-navigation" aria-expanded="false")
+    nav.header-nav             
+        ul.menu__primary-nav(role="list" data-visible="false")
+            li: a(href="/"): span.menu__item  Home
+            li: a(href="/tenants"): span.menu__item Tenants
+            li: a(href="/sales"): span.menu__item Sales
+            li: a(href="#"): span.menu__item Login
+            li: a.menu__cta(href="/#contact"): span Contact
+
 
             
             
