@@ -1,7 +1,7 @@
 const navHeight = document.querySelector(".header-nav").offsetHeight;
 document.documentElement.style.setProperty(
   "--scroll-padding",
-  navHeight - 10 + "px"
+  navHeight + 60 + "px"
 );
 
 const primaryNav = document.querySelector(".menu__primary-nav");

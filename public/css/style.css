@@ -335,10 +335,10 @@ footer {
   grid-column: content-start / content-end;
   text-align: center; }
   .benefits-block h3 {
-    font-size: clamp(12px, 3.4rem, 4.4rem);
+    font-size: clamp(12px, 3rem, 4.4rem);
     font-weight: 400;
     color: #4a4a4a;
-    font-size: 3.4rem;
+    font-size: 3rem;
     font-weight: 400;
     color: #4a4a4a;
     align-self: center;
@@ -401,10 +401,10 @@ footer {
   flex-direction: column;
   justify-content: center; }
   .contact-block h3 {
-    font-size: clamp(12px, 3.4rem, 4.4rem);
+    font-size: clamp(12px, 3rem, 4.4rem);
     font-weight: 400;
     color: #f9f9f9;
-    font-size: 3.4rem;
+    font-size: 3rem;
     font-weight: 400;
     color: #f9f9f9;
     text-align: center;
@@ -571,10 +571,10 @@ footer {
   grid-column: content-start / content-end;
   text-align: center; }
   .landlord-faqs-block h3 {
-    font-size: clamp(12px, 3.4rem, 4.4rem);
+    font-size: clamp(12px, 3rem, 4.4rem);
     font-weight: 400;
     color: #4a4a4a;
-    font-size: 3.4rem;
+    font-size: 3rem;
     font-weight: 400;
     color: #4a4a4a;
     margin-bottom: 3rem; }
@@ -655,10 +655,10 @@ footer {
   grid-column: col-start 5 / content-end;
   padding: 0rem 3rem; }
   .more-benefits__information h3 {
-    font-size: clamp(12px, 3.4rem, 4.4rem);
+    font-size: clamp(12px, 3rem, 4.4rem);
     font-weight: 400;
     color: #4a4a4a;
-    font-size: 3.4rem;
+    font-size: 3rem;
     font-weight: 400;
     color: #4a4a4a;
     text-align: center; }
@@ -700,10 +700,10 @@ footer {
   grid-column: content-start / content-end;
   text-align: center; }
   .reviews-block h3 {
-    font-size: clamp(12px, 3.4rem, 4.4rem);
+    font-size: clamp(12px, 3rem, 4.4rem);
     font-weight: 400;
     color: #4a4a4a;
-    font-size: 3.4rem;
+    font-size: 3rem;
     font-weight: 400;
     color: #4a4a4a;
     text-transform: capitalize;
@@ -763,10 +763,10 @@ footer {
   grid-column: content-start / col-end 4;
   margin-right: 4rem; }
   .team__information h3 {
-    font-size: clamp(12px, 3.4rem, 4.4rem);
+    font-size: clamp(12px, 3rem, 4.4rem);
     font-weight: 400;
     color: #4a4a4a;
-    font-size: 3.4rem;
+    font-size: 3rem;
     font-weight: 400;
     color: #4a4a4a; }
   .team__information p {
@@ -864,10 +864,10 @@ footer {
       grid-column: 2 / 10;
       grid-row: 1/ 1; } }
   .brevard-content h3 {
-    font-size: clamp(12px, 3.4rem, 4.4rem);
+    font-size: clamp(12px, 3rem, 4.4rem);
     font-weight: 400;
     color: #4a4a4a;
-    font-size: 3.4rem;
+    font-size: 3rem;
     font-weight: 400;
     color: #4a4a4a;
     padding-bottom: 1rem;
@@ -940,10 +940,10 @@ footer {
   grid-column: content-start / content-end;
   text-align: center; }
   .meet-the-team-block h3 {
-    font-size: clamp(12px, 3.4rem, 4.4rem);
+    font-size: clamp(12px, 3rem, 4.4rem);
     font-weight: 400;
     color: #4a4a4a;
-    font-size: 3.4rem;
+    font-size: 3rem;
     font-weight: 400;
     color: #4a4a4a;
     text-transform: capitalize; }
@@ -999,10 +999,10 @@ footer {
   grid-column: content-start / content-end;
   text-align: center; }
   .rental-listings-block h3 {
-    font-size: clamp(12px, 3.4rem, 4.4rem);
+    font-size: clamp(12px, 3rem, 4.4rem);
     font-weight: 400;
     color: #4a4a4a;
-    font-size: 3.4rem;
+    font-size: 3rem;
     font-weight: 400;
     color: #4a4a4a;
     text-transform: capitalize;
@@ -1114,10 +1114,10 @@ footer {
   grid-column: content-start / content-end;
   text-align: center; }
   .rental-process-block h3 {
-    font-size: clamp(12px, 3.4rem, 4.4rem);
+    font-size: clamp(12px, 3rem, 4.4rem);
     font-weight: 400;
     color: #4a4a4a;
-    font-size: 3.4rem;
+    font-size: 3rem;
     font-weight: 400;
     color: #4a4a4a;
     margin-bottom: 3rem;
@@ -1174,10 +1174,10 @@ footer {
   grid-column: content-start / content-end;
   text-align: center; }
   .tenant-faqs-block h3 {
-    font-size: clamp(12px, 3.4rem, 4.4rem);
+    font-size: clamp(12px, 3rem, 4.4rem);
     font-weight: 400;
     color: #4a4a4a;
-    font-size: 3.4rem;
+    font-size: 3rem;
     font-weight: 400;
     color: #4a4a4a;
     margin-bottom: 3rem; }
