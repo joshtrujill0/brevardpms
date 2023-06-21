@@ -131,10 +131,10 @@ header {
 .menu__primary-nav {
   display: flex;
   align-items: center;
-  grid-gap: 2rem; }
+  grid-gap: 2.5rem; }
 
 .menu__item {
-  font-size: clamp(12px, 1.6rem, 6rem);
+  font-size: clamp(12px, 1.6rem, 4.4rem);
   font-weight: 400;
   color: #f9f9f9;
   font-size: 1.6rem;
@@ -315,7 +315,7 @@ footer {
   background-color: #138674;
   z-index: 10000; }
   .attention p {
-    font-size: clamp(12px, 1.6rem, 6rem);
+    font-size: clamp(12px, 1.6rem, 4.4rem);
     font-weight: 100;
     color: #4a4a4a;
     font-size: 1.6rem;
@@ -335,7 +335,7 @@ footer {
   grid-column: content-start / content-end;
   text-align: center; }
   .benefits-block h3 {
-    font-size: clamp(12px, 3.4rem, 6rem);
+    font-size: clamp(12px, 3.4rem, 4.4rem);
     font-weight: 400;
     color: #4a4a4a;
     font-size: 3.4rem;
@@ -377,7 +377,7 @@ footer {
     fill: #20cbb2;
     width: 4rem; }
   .card__text {
-    font-size: clamp(12px, 1.6rem, 6rem);
+    font-size: clamp(12px, 1.6rem, 4.4rem);
     font-weight: 100;
     color: #4a4a4a;
     font-size: 1.6rem;
@@ -401,7 +401,7 @@ footer {
   flex-direction: column;
   justify-content: center; }
   .contact-block h3 {
-    font-size: clamp(12px, 3.4rem, 6rem);
+    font-size: clamp(12px, 3.4rem, 4.4rem);
     font-weight: 400;
     color: #f9f9f9;
     font-size: 3.4rem;
@@ -410,7 +410,7 @@ footer {
     text-align: center;
     margin-bottom: 2rem; }
   .contact-block p {
-    font-size: clamp(12px, 1.6rem, 6rem);
+    font-size: clamp(12px, 1.6rem, 4.4rem);
     font-weight: 100;
     color: #f9f9f9;
     font-size: 1.6rem;
@@ -498,7 +498,7 @@ footer {
       align-items: center;
       text-align: center; } }
   .hero-block__keyword {
-    font-size: clamp(12px, 1.6rem, 6rem);
+    font-size: clamp(12px, 1.6rem, 4.4rem);
     font-weight: 400;
     color: #f9f9f9;
     font-size: 1.6rem;
@@ -508,17 +508,17 @@ footer {
     margin-bottom: 3rem;
     font-size: 1.2rem; }
   .hero-block__main-heading {
-    font-size: clamp(12px, 6rem, 6rem);
-    font-weight: 700;
+    font-size: clamp(12px, 4.4rem, 4.4rem);
+    font-weight: 500;
     color: #f9f9f9;
-    font-size: 6rem;
-    font-weight: 700;
+    font-size: 4.4rem;
+    font-weight: 500;
     color: #f9f9f9;
     line-height: 1;
     text-transform: capitalize;
     margin-bottom: 4rem; }
   .hero-block__slogan {
-    font-size: clamp(12px, 2rem, 6rem);
+    font-size: clamp(12px, 2rem, 4.4rem);
     font-weight: 100;
     color: #f9f9f9;
     font-size: 2rem;
@@ -537,6 +537,28 @@ footer {
     border-color: white;
     background-color: white;
     color: #d3b107; }
+  @media (max-width: 37.5em) {
+    .hero-cta {
+      align-self: center; } }
+
+.team-button {
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+  text-transform: uppercase;
+  text-transform: capitalize;
+  width: fit-content; }
+  .team-button:hover {
+    background-color: #d3b107;
+    border-color: #d3b107;
+    color: white; }
+
+.cta-buttons {
+  display: flex;
+  gap: 2rem; }
+  @media (max-width: 56.25em) {
+    .cta-buttons {
+      flex-direction: column; } }
 
 #landlord-faq {
   display: grid;
@@ -549,7 +571,7 @@ footer {
   grid-column: content-start / content-end;
   text-align: center; }
   .landlord-faqs-block h3 {
-    font-size: clamp(12px, 3.4rem, 6rem);
+    font-size: clamp(12px, 3.4rem, 4.4rem);
     font-weight: 400;
     color: #4a4a4a;
     font-size: 3.4rem;
@@ -593,7 +615,7 @@ footer {
   overflow: hidden;
   transition: all 0.5s; }
   .answer P {
-    font-size: clamp(12px, 1.6rem, 6rem);
+    font-size: clamp(12px, 1.6rem, 4.4rem);
     font-weight: 100;
     color: #4a4a4a;
     font-size: 1.6rem;
@@ -633,7 +655,7 @@ footer {
   grid-column: col-start 5 / content-end;
   padding: 0rem 3rem; }
   .more-benefits__information h3 {
-    font-size: clamp(12px, 3.4rem, 6rem);
+    font-size: clamp(12px, 3.4rem, 4.4rem);
     font-weight: 400;
     color: #4a4a4a;
     font-size: 3.4rem;
@@ -659,7 +681,7 @@ footer {
     width: 2.3rem;
     fill: #138674; }
   .benefits__text {
-    font-size: clamp(12px, 1.6rem, 6rem);
+    font-size: clamp(12px, 1.6rem, 4.4rem);
     font-weight: 100;
     color: #4a4a4a;
     font-size: 1.6rem;
@@ -678,7 +700,7 @@ footer {
   grid-column: content-start / content-end;
   text-align: center; }
   .reviews-block h3 {
-    font-size: clamp(12px, 3.4rem, 6rem);
+    font-size: clamp(12px, 3.4rem, 4.4rem);
     font-weight: 400;
     color: #4a4a4a;
     font-size: 3.4rem;
@@ -718,7 +740,7 @@ footer {
     font-weight: 700;
     margin-bottom: 2rem; }
   .review__text {
-    font-size: clamp(12px, 1.6rem, 6rem);
+    font-size: clamp(12px, 1.6rem, 4.4rem);
     font-weight: 100;
     color: #4a4a4a;
     font-size: 1.6rem;
@@ -741,14 +763,14 @@ footer {
   grid-column: content-start / col-end 4;
   margin-right: 4rem; }
   .team__information h3 {
-    font-size: clamp(12px, 3.4rem, 6rem);
+    font-size: clamp(12px, 3.4rem, 4.4rem);
     font-weight: 400;
     color: #4a4a4a;
     font-size: 3.4rem;
     font-weight: 400;
     color: #4a4a4a; }
   .team__information p {
-    font-size: clamp(12px, 1.6rem, 6rem);
+    font-size: clamp(12px, 1.6rem, 4.4rem);
     font-weight: 100;
     color: #4a4a4a;
     font-size: 1.6rem;
@@ -776,17 +798,6 @@ footer {
       grid-row: 2/ 2; }
       .team__photo img {
         width: 50%; } }
-
-.team-button {
-  border: 3px solid #d3b107;
-  color: white;
-  background-color: #d3b107;
-  text-transform: capitalize;
-  width: fit-content; }
-  .team-button:hover {
-    border-color: #f7d00c;
-    background-color: #f7d00c;
-    color: white; }
 
 #ksc svg, #beaches svg, #entertainment svg {
   width: 4rem;
@@ -853,7 +864,7 @@ footer {
       grid-column: 2 / 10;
       grid-row: 1/ 1; } }
   .brevard-content h3 {
-    font-size: clamp(12px, 3.4rem, 6rem);
+    font-size: clamp(12px, 3.4rem, 4.4rem);
     font-weight: 400;
     color: #4a4a4a;
     font-size: 3.4rem;
@@ -899,17 +910,17 @@ footer {
       align-items: center;
       text-align: center; } }
   .hero-sales-block h1 {
-    font-size: clamp(12px, 6rem, 6rem);
-    font-weight: 700;
+    font-size: clamp(12px, 4.4rem, 4.4rem);
+    font-weight: 500;
     color: #f9f9f9;
-    font-size: 6rem;
-    font-weight: 700;
+    font-size: 4.4rem;
+    font-weight: 500;
     color: #f9f9f9;
     line-height: 1;
     text-transform: capitalize;
     margin-bottom: 4rem; }
   .hero-sales-block p {
-    font-size: clamp(12px, 2rem, 6rem);
+    font-size: clamp(12px, 2rem, 4.4rem);
     font-weight: 100;
     color: #f9f9f9;
     font-size: 2rem;
@@ -929,7 +940,7 @@ footer {
   grid-column: content-start / content-end;
   text-align: center; }
   .meet-the-team-block h3 {
-    font-size: clamp(12px, 3.4rem, 6rem);
+    font-size: clamp(12px, 3.4rem, 4.4rem);
     font-weight: 400;
     color: #4a4a4a;
     font-size: 3.4rem;
@@ -957,17 +968,17 @@ footer {
       align-items: center;
       text-align: center; } }
   .hero-tenants-block h1 {
-    font-size: clamp(12px, 6rem, 6rem);
-    font-weight: 700;
+    font-size: clamp(12px, 4.4rem, 4.4rem);
+    font-weight: 500;
     color: #f9f9f9;
-    font-size: 6rem;
-    font-weight: 700;
+    font-size: 4.4rem;
+    font-weight: 500;
     color: #f9f9f9;
     line-height: 1;
     text-transform: capitalize;
     margin-bottom: 4rem; }
   .hero-tenants-block p {
-    font-size: clamp(12px, 2rem, 6rem);
+    font-size: clamp(12px, 2rem, 4.4rem);
     font-weight: 100;
     color: #f9f9f9;
     font-size: 2rem;
@@ -988,7 +999,7 @@ footer {
   grid-column: content-start / content-end;
   text-align: center; }
   .rental-listings-block h3 {
-    font-size: clamp(12px, 3.4rem, 6rem);
+    font-size: clamp(12px, 3.4rem, 4.4rem);
     font-weight: 400;
     color: #4a4a4a;
     font-size: 3.4rem;
@@ -998,7 +1009,7 @@ footer {
     margin-bottom: 1rem; }
 
 .property-disclaimer {
-  font-size: clamp(12px, 1.6rem, 6rem);
+  font-size: clamp(12px, 1.6rem, 4.4rem);
   font-weight: 100;
   color: #4a4a4a;
   font-size: 1.6rem;
@@ -1008,7 +1019,7 @@ footer {
   margin-bottom: 3rem; }
 
 .no-properties {
-  font-size: clamp(12px, 2rem, 6rem);
+  font-size: clamp(12px, 2rem, 4.4rem);
   font-weight: 700;
   color: #4a4a4a;
   font-size: 2rem;
@@ -1043,7 +1054,7 @@ footer {
   background-color: #4bba7e; }
 
 .description {
-  font-size: clamp(12px, 1.6rem, 6rem);
+  font-size: clamp(12px, 1.6rem, 4.4rem);
   font-weight: 100;
   color: #4a4a4a;
   font-size: 1.6rem;
@@ -1103,7 +1114,7 @@ footer {
   grid-column: content-start / content-end;
   text-align: center; }
   .rental-process-block h3 {
-    font-size: clamp(12px, 3.4rem, 6rem);
+    font-size: clamp(12px, 3.4rem, 4.4rem);
     font-weight: 400;
     color: #4a4a4a;
     font-size: 3.4rem;
@@ -1132,7 +1143,7 @@ footer {
     .rental-steps__card:not(:last-of-type) {
       margin-bottom: 2rem; }
     .rental-steps__card p {
-      font-size: clamp(12px, 1.6rem, 6rem);
+      font-size: clamp(12px, 1.6rem, 4.4rem);
       font-weight: 100;
       color: #4a4a4a;
       font-size: 1.6rem;
@@ -1143,7 +1154,7 @@ footer {
       fill: #20cbb2;
       width: 4rem; }
     .rental-steps__card h3 {
-      font-size: clamp(12px, 2rem, 6rem);
+      font-size: clamp(12px, 2rem, 4.4rem);
       font-weight: 700;
       color: #4a4a4a;
       font-size: 2rem;
@@ -1163,7 +1174,7 @@ footer {
   grid-column: content-start / content-end;
   text-align: center; }
   .tenant-faqs-block h3 {
-    font-size: clamp(12px, 3.4rem, 6rem);
+    font-size: clamp(12px, 3.4rem, 4.4rem);
     font-weight: 400;
     color: #4a4a4a;
     font-size: 3.4rem;
