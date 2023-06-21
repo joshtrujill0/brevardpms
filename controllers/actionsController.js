@@ -29,6 +29,7 @@ exports.formSubmit = (req, res) => {
       html: `<h1>Website Lead Information:</h1><br>
              <p><b>Name:</b> ${req.body.firstName} ${req.body.lastName}</p><br>
              <p><b>Email:</b> ${req.body.email}</p><br>
+             <p><b>Phone Number:</b> ${req.body.phone}</p><br>
              <p><b>Message:</b> ${req.body.message}</p>`,
     };
 
