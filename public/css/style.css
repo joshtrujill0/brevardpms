@@ -175,11 +175,12 @@ header {
     background-repeat: no-repeat;
     width: 3.4rem;
     aspect-ratio: 1;
-    top: 2rem;
+    top: 50%;
     right: 2rem;
     border: 0;
     z-index: 100000;
-    cursor: pointer; }
+    cursor: pointer;
+    transform: translateY(-50%); }
   header {
     background-color: #20cbb2;
     padding: 1rem 2rem; } }
