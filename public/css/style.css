@@ -178,7 +178,8 @@ header {
     top: 2rem;
     right: 2rem;
     border: 0;
-    z-index: 100000; }
+    z-index: 100000;
+    cursor: pointer; }
   header {
     background-color: #20cbb2;
     padding: 1rem 2rem; } }
@@ -1017,20 +1018,22 @@ footer {
 
 .property-cards-block {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   grid-column-gap: 2rem;
   grid-row-gap: 2rem; }
 
 .property-card {
   display: flex;
   flex-direction: column;
-  background-color: #e7e7e7; }
+  background-color: #fff;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2); }
   .property-card img {
     aspect-ratio: 14 / 9; }
   .property-card__info {
-    display: flex; }
-    .property-card__info svg {
-      height: 1rem; }
+    display: flex;
+    background-color: #e7e7e7;
+    padding: 1rem;
+    align-items: center; }
   .property-card__desc {
     flex-grow: 1; }
 
@@ -1038,14 +1041,55 @@ footer {
   height: 4rem;
   background-color: #4bba7e; }
 
-.address {
-  font-style: normal;
+.description {
   font-size: clamp(12px, 1.6rem, 6rem);
   font-weight: 100;
   color: #4a4a4a;
   font-size: 1.6rem;
   font-weight: 100;
-  color: #4a4a4a; }
+  color: #4a4a4a;
+  text-align: left;
+  padding: 1.2rem 1rem; }
+
+.pin {
+  fill: #4bba7e;
+  height: 2.5rem; }
+
+.city {
+  color: #4bba7e;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-right: auto; }
+
+.bedrooms,
+.bathrooms,
+.address,
+.sqft {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #6c6c6c;
+  padding: 0rem 1rem;
+  text-transform: capitalize; }
+
+.address {
+  text-align: left;
+  font-size: 2.2rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem; }
+
+.sqft {
+  font-style: italic;
+  text-align: left; }
+
+.apply {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .apply span {
+    color: #f9f9f9;
+    font-size: 1.6rem;
+    font-weight: 500; }
 
 #rental-process {
   display: grid;

@@ -102,14 +102,14 @@ block content
                             .property-card
                                 img(src=listing.adpic_link)
                                 .property-card__info 
-                                    svg: use(xlink:href="img/bpms-sprite.svg#pin")
+                                    svg.pin: use(xlink:href="img/bpms-sprite.svg#pin")
                                     p.city= listing.city
-                                    p= `${listing.bedrooms} bedrooms`
-                                    p= `${listing.bathrooms} bathrooms`
-                                    p= `${listing.sqft} SQFT`
+                                    p.bedrooms= `${listing.bedrooms} bedrooms`
+                                    p.bathrooms= `${listing.bathrooms} bathrooms`
                                 .property-card__desc 
-                                    p= listing.address 
-                                    p.address= listing.class_ad
+                                    p.address= listing.address 
+                                    p.sqft= `${listing.sqft} SQFT`
+                                    p.description= listing.class_ad
                                 a.apply(href="#"): span Apply Now
 
                         

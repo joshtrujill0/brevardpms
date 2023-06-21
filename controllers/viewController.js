@@ -24,7 +24,7 @@ exports.tenants = async (req, res) => {
   const endpoint = process.env.RENTEC_LINK;
   const rentec = await axios.post(endpoint);
   const listings = rentec.data.properties;
-  console.log(rentec.data.properties);
+  // console.log(rentec.data.properties[0].images[2]);
   res.status(200).render("tenants", {
     listings,
   });
