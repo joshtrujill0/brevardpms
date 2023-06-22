@@ -348,7 +348,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 2rem; }
-  @media (max-width: 56.25em) {
+  @media (max-width: 62.5em) {
     .cards-container {
       grid-template-rows: repeat(2, 1fr);
       grid-template-columns: repeat(2, 1fr); } }
@@ -1033,7 +1033,7 @@ footer {
 
 .property-cards-block {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(42rem, 1fr));
   grid-column-gap: 2rem;
   grid-row-gap: 2rem; }
 
@@ -1080,7 +1080,8 @@ footer {
 .bedrooms,
 .bathrooms,
 .address,
-.sqft {
+.sqft,
+.rent {
   font-weight: 700;
   font-size: 1.4rem;
   color: #6c6c6c;
@@ -1105,6 +1106,9 @@ footer {
     color: #f9f9f9;
     font-size: 1.6rem;
     font-weight: 500; }
+
+.rent {
+  font-size: 1.6rem; }
 
 #rental-process {
   display: grid;

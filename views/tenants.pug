@@ -106,6 +106,8 @@ block content
                                     p.city= listing.city
                                     p.bedrooms= `${listing.bedrooms} bedrooms`
                                     p.bathrooms= `${listing.bathrooms} bathrooms`
+                                    if listing.rent != null  
+                                        p.rent= `$${listing.rent}`
                                 .property-card__desc 
                                     p.address= listing.address 
                                     p.sqft= `${listing.sqft} SQFT`
