@@ -106,10 +106,11 @@ block content
                                     p.city= listing.city
                                     p.bedrooms= `${listing.bedrooms} bedrooms`
                                     p.bathrooms= `${listing.bathrooms} bathrooms`
-                                    if listing.rent != null  
-                                        p.rent= `$${listing.rent}`
-                                .property-card__desc 
-                                    p.address= listing.address 
+                                .property-card__desc
+                                    .address-box
+                                        p.address= listing.address 
+                                        if listing.rent != null  
+                                            p.rent= `$${listing.rent}`
                                     p.sqft= `${listing.sqft} SQFT`
                                     p.description= listing.class_ad
                                 a.apply(href=`https://propertymanage.biz/apps/application_occupants.php?listing_id=${listing.property_id}&u=54565`): span Apply Now
