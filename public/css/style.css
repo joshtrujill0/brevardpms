@@ -115,7 +115,7 @@ header {
   height: 8.5rem;
   z-index: 99;
   background-color: #20cbb2;
-  padding: 1rem 8.5rem;
+  padding: 1rem 2.5rem;
   display: flex;
   align-items: center; }
   header img {
@@ -493,7 +493,7 @@ footer {
   display: flex;
   justify-content: center;
   flex-direction: column; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 56.25em) {
     .hero-block {
       align-items: center;
       text-align: center; } }
@@ -532,7 +532,9 @@ footer {
   color: white;
   background-color: #d3b107;
   text-transform: capitalize;
-  width: fit-content; }
+  width: fit-content;
+  width: 27ch;
+  text-align: center; }
   .hero-cta:hover {
     border-color: white;
     background-color: white;
@@ -547,7 +549,8 @@ footer {
   background-color: transparent;
   text-transform: uppercase;
   text-transform: capitalize;
-  width: fit-content; }
+  width: 27ch;
+  text-align: center; }
   .team-button:hover {
     background-color: #d3b107;
     border-color: #d3b107;
@@ -905,7 +908,7 @@ footer {
   display: flex;
   justify-content: center;
   flex-direction: column; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 56.25em) {
     .hero-sales-block {
       align-items: center;
       text-align: center; } }
@@ -963,7 +966,7 @@ footer {
   display: flex;
   justify-content: center;
   flex-direction: column; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 56.25em) {
     .hero-tenants-block {
       align-items: center;
       text-align: center; } }
