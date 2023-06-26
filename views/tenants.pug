@@ -7,7 +7,9 @@ block content
     main 
         section#hero-tenants 
             .overlay
-            img.hero-background(src="/img/tenants-desktop.jpg", alt="")
+            picture.hero-background
+                source(srcset="/img/tenants-mobile.jpg" media="(max-width: 43.75em)")
+                img.hero-background(src="/img/tenants-desktop.jpg", alt="")
             .hero-tenants-block
                 h1 Find your rental today 
                 p A knowledgable team to walk you through the entire rental process, hassle-free.
@@ -100,7 +102,7 @@ block content
                     .property-cards-block
                         for listing in listings
                             .property-card
-                                img(src=listing.adpic_link)
+                                img(src=listing.adpic_link loading="lazy")
                                 .property-card__info 
                                     svg.pin: use(xlink:href="img/bpms-sprite.svg#pin")
                                     p.city= listing.city

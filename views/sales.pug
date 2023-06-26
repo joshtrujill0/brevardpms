@@ -7,7 +7,9 @@ block content
     main
         section#hero-sales 
             .overlay
-            img.hero-background(src="/img/sales-desktop.jpg", alt="")
+            picture.hero-background 
+                source(srcset="/img/sales-mobile.jpg" media="(max-width: 43.75em)")
+                img.hero-background(src="/img/sales-desktop.jpg", alt="")
             .hero-sales-block
                 h1 Your guide for buying or selling
                 p Well versed in the Brevard County market, our team will help you through real estate transactions.

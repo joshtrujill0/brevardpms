@@ -8,7 +8,9 @@ block content
     main
         section#hero
             .overlay
-            img.hero-background(src="/img/hero-desktop.jpg", alt="")
+            picture.hero-background
+                source(srcset="/img/hero-mobile.jpg" media="(max-width: 43.75em)")
+                img.hero-background(src="/img/hero-desktop.jpg", alt="")
             .hero-block
                 //- h1.hero-block__keyword Brevard County property management and sales
                 h1.hero-block__main-heading Brevard Property Management &amp; Sales 
@@ -44,11 +46,11 @@ block content
                 p Brevard Property Management &amp; Sales is a real estate company located in Titusville, Florida. We specialize in both property management and real estate sales. <br><br>We help both landlords and tenants with each side of the rental process and management by providing professional service, experienced guidance, and efficient technology to create an easy rental experience. <br><br>Working with people in property management requires open communication at all times. We believe that the personal relationships that our team has developed over the years will keep us on top of our profession. <br><br> If you are looking to buy or sell a home, we also have a team for assisting with real estate transactions.
                 //- a(href="/sales").team-button I'm looking to buy or sell
             .team__photo 
-                img(src="https://picsum.photos/512", alt="brevard property management and sales team members" loading="lazy") 
+                img(src="https://picsum.photos/512", alt="brevard property management and sales team members", loading="lazy") 
                 
         section#more-benefits
             .more-benefits__photos 
-                img(src="https://picsum.photos/512", alt="brevard property management and sales office")
+                img(src="https://picsum.photos/512", alt="brevard property management and sales office", loading="lazy")
             .more-benefits__information 
                 h3 Your investment is our #[span.gray-heading-smaller__accent top priority]
                 ul
