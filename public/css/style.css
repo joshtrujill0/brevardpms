@@ -56,6 +56,37 @@ a:link, a:visited {
   padding: 0;
   box-sizing: inherit; }
 
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  src: url("/fonts/roboto-regular-webfont.woff2") format("woff2"), url("/fonts/roboto-regular-webfont.woff") format("woff"); }
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 900;
+  src: url("/fonts/roboto-black-webfont.woff2") format("woff2"), url("/fonts/roboto-black-webfont.woff") format("woff"); }
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  src: url("/fonts/roboto-bold-webfont.woff2") format("woff2"), url("/fonts/roboto-bold-webfont.woff") format("woff"); }
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 500;
+  src: url("/fonts/roboto-medium-webfont.woff2") format("woff2"), url("/fonts/roboto-medium-webfont.woff") format("woff"); }
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 100;
+  src: url("/fonts/roboto-light-webfont.woff2") format("woff2"), url("/fonts/roboto-light-webfont.woff") format("woff"); }
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: italic;
+  src: url("/fonts/roboto-italic-webfont.woff2") format("woff2"), url("/fonts/roboto-italic-webfont.woff") format("woff"); }
+
 html {
   box-sizing: border-box;
   scroll-padding-top: var(--scroll-padding, 8rem);
@@ -514,7 +545,7 @@ footer {
     font-size: 4.4rem;
     font-weight: 500;
     color: #f9f9f9;
-    line-height: 1;
+    line-height: 1.2;
     text-transform: capitalize;
     margin-bottom: 4rem; }
   .hero-block__slogan {
@@ -524,7 +555,7 @@ footer {
     font-size: 2rem;
     font-weight: 100;
     color: #f9f9f9;
-    font-size: 2.1rem;
+    font-size: 2.3rem;
     margin-bottom: 2rem; }
 
 .hero-cta {
@@ -850,7 +881,7 @@ footer {
   grid-row: 2 / 3; }
 
 #beaches {
-  grid-column: 8 /9;
+  grid-column: 9 /10;
   grid-row: 8 /9; }
 
 #entertainment {
@@ -919,7 +950,7 @@ footer {
     font-size: 4.4rem;
     font-weight: 500;
     color: #f9f9f9;
-    line-height: 1;
+    line-height: 1.2;
     text-transform: capitalize;
     margin-bottom: 4rem; }
   .hero-sales-block p {
@@ -977,7 +1008,7 @@ footer {
     font-size: 4.4rem;
     font-weight: 500;
     color: #f9f9f9;
-    line-height: 1;
+    line-height: 1.2;
     text-transform: capitalize;
     margin-bottom: 4rem; }
   .hero-tenants-block p {
