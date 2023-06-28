@@ -1240,3 +1240,29 @@ footer {
   @media (max-width: 50em) {
     .tenant-faqs {
       grid-template-columns: 1fr; } }
+
+.privacy {
+  display: grid;
+  grid-template-columns: [full-start] minmax(1.8rem, 1fr) [content-start] repeat(8, [col-start] minmax(4rem, 18rem) [col-end]) [content-end] minmax(1.8rem, 1fr) [full-end];
+  grid-column: full-start / full-end;
+  padding: 4rem 0rem;
+  background-color: #f9f9f9; }
+
+.privacy-block {
+  grid-column: content-start / content-end; }
+  .privacy-block h2 {
+    font-size: clamp(12px, 3rem, 4.4rem);
+    font-weight: 400;
+    color: #4a4a4a;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #4a4a4a;
+    padding-bottom: 2rem; }
+  .privacy-block p {
+    font-size: clamp(12px, 1.6rem, 4.4rem);
+    font-weight: 100;
+    color: #4a4a4a;
+    font-size: 1.6rem;
+    font-weight: 100;
+    color: #4a4a4a;
+    line-height: 1.5; }
