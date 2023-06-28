@@ -35,6 +35,7 @@ const submitContactFormData = async (
       document.getElementById("lastname").value = "";
       document.getElementById("email").value = "";
       document.getElementById("message").value = "";
+      document.getElementById("phone").value = "";
     }
   } catch (err) {
     console.log(err);
