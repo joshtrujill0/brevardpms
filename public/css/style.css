@@ -686,8 +686,7 @@ footer {
         width: 50%; } }
 
 .more-benefits__information {
-  grid-column: col-start 5 / content-end;
-  padding: 0rem 3rem; }
+  grid-column: col-start 5 / content-end; }
   .more-benefits__information h3 {
     font-size: clamp(12px, 3rem, 4.4rem);
     font-weight: 400;
