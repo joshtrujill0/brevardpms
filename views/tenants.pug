@@ -102,7 +102,10 @@ block content
                     .property-cards-block
                         for listing in listings
                             .property-card
-                                img(src=listing.adpic_link loading="lazy")
+                                //- img(src=listing.adpic_link loading="lazy")
+                                .property-images 
+                                    each val in listing.images 
+                                        img(src=val.imagelink loading="lazy" class="property-image-scroll")
                                 .property-card__info 
                                     svg.pin: use(xlink:href="img/bpms-sprite.svg#pin")
                                     p.city= listing.city
@@ -116,6 +119,7 @@ block content
                                     p.sqft= `${listing.sqft} SQFT`
                                     p.description= listing.class_ad
                                 a.apply(href=`https://propertymanage.biz/apps/application_occupants.php?listing_id=${listing.property_id}&u=54565`): span Apply Now
+                                //- a.apply(href=`https://propertymanage.biz/u54565/rentals/detail?p=${listing.property_id}&iframe=1`): span Images &amp; Info
 
                         
         script(src='/js/tenants.js' defer)

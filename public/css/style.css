@@ -143,14 +143,14 @@ header {
   position: sticky;
   top: 0;
   transition: background-color 0.6s;
-  height: 8.5rem;
+  height: 11rem;
   z-index: 99;
   background-color: #20cbb2;
   padding: 1rem 2.5rem;
   display: flex;
   align-items: center; }
   header img {
-    height: 9rem;
+    height: 12rem;
     padding: 0.5rem; }
 
 .header-nav {
@@ -1144,6 +1144,14 @@ footer {
 .address-box {
   display: flex;
   align-items: center; }
+
+.property-images {
+  display: flex;
+  overflow-y: scroll;
+  scroll-snap-type: x mandatory; }
+
+.property-image-scroll {
+  scroll-snap-align: center; }
 
 #rental-process {
   display: grid;
