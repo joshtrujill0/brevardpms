@@ -1,7 +1,7 @@
 const navHeight = document.querySelector(".header-nav").offsetHeight;
 document.documentElement.style.setProperty(
   "--scroll-padding",
-  navHeight + 60 + "px"
+  navHeight + 50 + "px"
 );
 
 const primaryNav = document.querySelector(".menu__primary-nav");
@@ -17,4 +17,9 @@ navToggle.addEventListener("click", () => {
   state === "false"
     ? primaryNav.setAttribute("aria-expanded", true)
     : primaryNav.setAttribute("aria-expanded", false);
+});
+
+window.addEventListener("scroll", (e) => {
+  const header = document.querySelector("header");
+  header.classList.toggle("sticky", window.scrollY > 150);
 });

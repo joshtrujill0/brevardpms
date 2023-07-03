@@ -148,7 +148,8 @@ header {
   background-color: #20cbb2;
   padding: 1rem 2.5rem;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  transition: all 0.5s ease; }
   header img {
     height: 12rem;
     padding: 0.5rem; }
@@ -215,6 +216,11 @@ header {
   header {
     background-color: #20cbb2;
     padding: 1rem 2rem; } }
+
+.sticky {
+  height: 7.5rem; }
+  .sticky img {
+    height: 8rem; }
 
 footer {
   background-color: #20cbb2;
@@ -979,7 +985,46 @@ footer {
     font-size: 3rem;
     font-weight: 400;
     color: #4a4a4a;
-    text-transform: capitalize; }
+    text-transform: capitalize;
+    margin-bottom: 3rem; }
+
+.agent-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: left;
+  grid-gap: 2rem; }
+  @media (max-width: 68.75em) {
+    .agent-cards {
+      grid-template-columns: 1fr; } }
+
+.agent {
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #a9a9a9;
+  border-radius: 2rem;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  align-items: center; }
+  .agent__desc {
+    margin-right: auto;
+    padding-right: 1rem; }
+  .agent__name {
+    font-size: 2.2rem;
+    color: #4a4a4a;
+    font-weight: 700;
+    margin-bottom: 2rem; }
+  .agent__about {
+    font-size: clamp(12px, 1.6rem, 4.4rem);
+    font-weight: 100;
+    color: #4a4a4a;
+    font-size: 1.6rem;
+    font-weight: 100;
+    color: #4a4a4a;
+    margin-bottom: 2rem; }
+  .agent__photo {
+    height: 16rem;
+    aspect-ratio: 1;
+    border-radius: 100vmax; }
 
 #hero-tenants {
   display: grid;
