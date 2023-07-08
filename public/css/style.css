@@ -1196,11 +1196,7 @@ footer {
 
 .property-images {
   display: flex;
-  overflow-y: scroll;
-  scroll-snap-type: x mandatory; }
-
-.property-image-scroll {
-  scroll-snap-align: center; }
+  overflow-x: scroll; }
 
 #rental-process {
   display: grid;

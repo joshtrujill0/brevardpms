@@ -8,13 +8,13 @@ exports.sales = (req, res) => {
   res.status(200).render("sales");
 };
 
-exports.contact = (req, res) => {
-  res.status(200).render("contact");
-};
+// exports.contact = (req, res) => {
+//   res.status(200).render("contact");
+// };
 
-exports.accessibility = (req, res) => {
-  res.status(200).render("accessibility");
-};
+// exports.accessibility = (req, res) => {
+//   res.status(200).render("accessibility");
+// };
 
 exports.privacy = (req, res) => {
   res.status(200).render("privacy");

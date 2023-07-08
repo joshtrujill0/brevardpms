@@ -105,7 +105,7 @@ block content
                                 //- img(src=listing.adpic_link loading="lazy")
                                 .property-images 
                                     each val in listing.images 
-                                        img(src=val.imagelink loading="lazy" class="property-image-scroll")
+                                        img(src=val.imagelink loading="lazy")
                                 .property-card__info 
                                     svg.pin: use(xlink:href="img/bpms-sprite.svg#pin")
                                     p.city= listing.city
