@@ -689,7 +689,7 @@ footer {
       grid-row: 2/ 2;
       margin-right: 0rem; }
       .more-benefits__photos img {
-        width: 50%; } }
+        width: 70%; } }
 
 .more-benefits__information {
   grid-column: col-start 5 / content-end; }
@@ -836,7 +836,7 @@ footer {
       grid-column: 2 / 10;
       grid-row: 2/ 2; }
       .team__photo img {
-        width: 50%; } }
+        width: 70%; } }
 
 #ksc svg, #beaches svg, #entertainment svg {
   width: 4rem;
