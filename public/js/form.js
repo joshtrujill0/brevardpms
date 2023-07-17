@@ -36,6 +36,7 @@ const submitContactFormData = async (
       document.getElementById("email").value = "";
       document.getElementById("message").value = "";
       document.getElementById("phone").value = "";
+      dataLayer.push({ event: "lead" });
     }
   } catch (err) {
     console.log(err);
