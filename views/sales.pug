@@ -36,12 +36,48 @@ block content
                             p.agent__about I am focused on giving my client the best possible home buying or selling experience. I believe that to best serve my clients, it is important to treat their real estate needs as if they were my own. I will earn your trust as we work together towards a common goal. I ahev the knowledge, experience and dedication that it takes to get the results you are looking for!
                         .agent__photo
                             img.agent__photo(src="img/donna.jpg")
-                    //- .agent
-                    //-     .agent__desc
-                    //-         h4.agent__name Tony Dubravski
-                    //-         p.agent__about Meet Lexi Lovett, the go-to realtor in Brevard County. With her distinctive pink suit jacket and deep knowledge of the local market, Lexi helps you buy or sell homes with ease. She treats clients like family, making sure your real estate dreams come true. So, whether you're in search of your dream home in Brevard County or looking to sell your property with confidence, Lexi Lovett is the name you can trust.
-                    //-     .agent__photo
-                    //-         img.agent__photo(src="img/lexi.jpg")
+                    .agent
+                        .agent__desc
+                            h4.agent__name Tony Dubravski
+                            p.agent__about I come from a construction background of measuring, designing and installing stair and balcony railings on some of the most beautiful homes, condos and commercial buildings and properties in Florida. Is a home with a view is what you are looking for or want to sell? Please don&apos;t hesitate to contact me. I would love to make all your real estate dreams a reality.
+                        .agent__photo
+                            img.agent__photo(src="img/tony.jpg")
+        section#sale-listings
+            .sale-listings-block 
+                h3 Our Properties For Sale
+                p.property-disclaimer We can still help you find other available properties. Contact us and our team will work to find the right home for you!
+                .properties 
+                    .sales-cards-block 
+                        .property-card 
+                            .property-images 
+                                img(src="img/93-delannoy.jpeg" loading="lazy")
+                            .property-card__info 
+                                svg.pin: use(xlink:href="img/bpms-sprite.svg#pin")
+                                p.city Cocoa
+                                p.bedrooms 3 bedrooms
+                                p.bathrooms 2 bathrooms
+                            .property-card__desc
+                                .address-box
+                                    p.address 93 Delannoy Avenue, 1103  
+                                        p.rent $699,900
+                                p.sqft 2,168 SQFT
+                                p.description MOTIVATED SELLER-MAKE YOUR OFFER to live in Paradise at the luxurious Whitley Bay Condo in Cocoa Village. Panoramic 11th floor views of the Indian River and Kennedy Space Center rocket launches won't disappoint. This condo features a tray ceiling lighted entry; kitchen with breakfast bar; rolling cook island; and pantry; Dining room and living room with balcony; Master bedroom w/balcony has luxurious master bath with his/hers closets, double vanities, garden tub, and separate shower; Guest bedroom has shared guest bath; Inside laundry room with wash sink and includes washer/dryer. Condo amenities include beautiful welcoming lobby, 3rd floor clubhouse area, inground pool/spa, and sauna. Walking distance to Cocoa Village to enjoy shops, restaurants, and the historic Cocoa Village Playhouse
+                            a.apply(href=`https://my.flexmls.com/SavannahBillow/search/shared_links/9CssT/listings/20230702201643518154000000`): span More Info
+                        .property-card 
+                            .property-images 
+                                img(src="img/3565-sable-palm.jpeg" loading="lazy")
+                            .property-card__info 
+                                svg.pin: use(xlink:href="img/bpms-sprite.svg#pin")
+                                p.city Titusville
+                                p.bedrooms 2 bedrooms
+                                p.bathrooms 1 bathroom
+                            .property-card__desc
+                                .address-box
+                                    p.address 3565 Sable Palm Lane, E  
+                                        p.rent $149,900
+                                p.sqft 785 SQFT
+                                p.description Villas at LaCita renovated 2nd floor condo with fireplace, brand new washer/dryer, and brand-new HVAC system. Galley kitchen has pantry and living room has slider to screened balcony with storage area. Community amenities include inground pool, tennis courts, fitness room, coined laundry, and picnic/BBQ area. Within minutes from watching rocket launches, the Indian River lagoon, shopping, and restaurants.
+                            a.apply(href=`https://my.flexmls.com/SavannahBillow/search/shared_links/9CstW/listings/20230726162155820883000000`): span More Info
         section#about-brevard 
             .about-brevard-block 
                 .brevard-map

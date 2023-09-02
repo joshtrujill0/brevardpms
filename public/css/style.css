@@ -1293,6 +1293,131 @@ footer {
     .tenant-faqs {
       grid-template-columns: 1fr; } }
 
+#sale-listings {
+  display: grid;
+  grid-template-columns: [full-start] minmax(1.8rem, 1fr) [content-start] repeat(8, [col-start] minmax(4rem, 18rem) [col-end]) [content-end] minmax(1.8rem, 1fr) [full-end];
+  grid-column: full-start / full-end;
+  padding: 4rem 0rem;
+  background-color: #f9f9f9;
+  min-height: 50vh; }
+
+.sale-listings-block {
+  grid-column: content-start / content-end;
+  text-align: center; }
+  .sale-listings-block h3 {
+    font-size: clamp(12px, 3rem, 4.4rem);
+    font-weight: 400;
+    color: #4a4a4a;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #4a4a4a;
+    text-transform: capitalize;
+    margin-bottom: 1rem; }
+
+.property-disclaimer {
+  font-size: clamp(12px, 1.6rem, 4.4rem);
+  font-weight: 100;
+  color: #4a4a4a;
+  font-size: 1.6rem;
+  font-weight: 100;
+  color: #4a4a4a;
+  font-style: italic;
+  margin-bottom: 3rem; }
+
+.no-properties {
+  font-size: clamp(12px, 2rem, 4.4rem);
+  font-weight: 700;
+  color: #4a4a4a;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #4a4a4a;
+  font-style: normal;
+  text-transform: capitalize; }
+
+.sales-cards-block {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem; }
+
+.property-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2); }
+  .property-card img {
+    aspect-ratio: 14 / 9; }
+  .property-card__info {
+    display: flex;
+    background-color: #e7e7e7;
+    padding: 1rem;
+    align-items: center; }
+  .property-card__desc {
+    flex-grow: 1; }
+
+.apply {
+  height: 4rem;
+  background-color: #4bba7e; }
+
+.description {
+  font-size: clamp(12px, 1.6rem, 4.4rem);
+  font-weight: 100;
+  color: #4a4a4a;
+  font-size: 1.6rem;
+  font-weight: 100;
+  color: #4a4a4a;
+  text-align: left;
+  padding: 1.2rem 1rem; }
+
+.pin {
+  fill: #4bba7e;
+  height: 2.5rem; }
+
+.city {
+  color: #4bba7e;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-right: auto; }
+
+.bedrooms,
+.bathrooms,
+.address,
+.sqft,
+.rent {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #6c6c6c;
+  padding: 0rem 1rem;
+  text-transform: capitalize; }
+
+.address {
+  text-align: left;
+  font-size: 2.2rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  flex-grow: 1; }
+
+.sqft,
+.rent {
+  text-align: left; }
+
+.apply {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .apply span {
+    color: #f9f9f9;
+    font-size: 1.6rem;
+    font-weight: 500; }
+
+.rent {
+  font-size: 1.8rem; }
+
+.address-box {
+  display: flex;
+  align-items: center; }
+
 .privacy {
   display: grid;
   grid-template-columns: [full-start] minmax(1.8rem, 1fr) [content-start] repeat(8, [col-start] minmax(4rem, 18rem) [col-end]) [content-end] minmax(1.8rem, 1fr) [full-end];
