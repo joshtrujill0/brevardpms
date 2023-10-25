@@ -1,11 +1,12 @@
 const { default: axios } = require("axios");
+const properties = require("../public/js/salesproperties.json");
 
 exports.base = (req, res) => {
   res.status(200).render("homepage");
 };
 
 exports.sales = (req, res) => {
-  res.status(200).render("sales");
+  res.status(200).render("sales", { properties });
 };
 
 exports.privacy = (req, res) => {
