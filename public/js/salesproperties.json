@@ -11,28 +11,6 @@
     "image": "img/2721-Riviera.jpg"
   },
   {
-   "address": "2510 Longwood Court",
-    "city": "Titusville",
-    "bedrooms": "3",
-    "bathrooms": "2",
-    "sqft": 1602,
-    "price": "$425,000",
-    "desc": "Check out this beautifully maintained 3 bedroom, 2 bath home with 2-car garage and screen enclosed pool. This home offers a roof done in 2021, hurricane shutters, hot water replaced in 2017 and has 9 1/2 ft ceilings throughout. If you work at the Space Center this house is only 14 miles to the industrial area of KSC. Close to shopping, I-95 and US-1. House also offers an extra driveway/RV pad behind the house with electric hookup.",
-    "link": "https://www.flexmls.com/share/AIXfT/2510-Longwood-Court-Titusville-FL-32780",
-    "image": "img/2510-Longwood.jpg"
-  },
-  {
-   "address": "1654 South Park Avenue",
-    "city": "Titusville",
-    "bedrooms": "2",
-    "bathrooms": "2",
-    "sqft": 1332,
-    "price": "$199,000",
-    "desc": "Welcome to Tennis Village! This 2-bedroom 21/2-bathroom two story townhouse has community pool and tennis court along with lower-level courtyard, and 2nd level balcony. Inside you will find an open floor plan with eat in kitchen and breakfast bar, living room with wood burning fireplace, a half bath with laundry, and sliders to access the courtyard from the dining and living areas. The second floor you will find the master bedroom with ensuite bath, guest bedroom with the guest bath and nice storage space. Main roof installed 6/2020. All of this conveniently located near the Indian River Lagoon on the Space Coast with easy access to major highways, beaches, shopping and medical. Dont miss this great opportunity!",
-    "link": "https://www.flexmls.com/share/A6PvK/1654-S-Park-Avenue-Titusville-FL-32780",
-    "image": "img/1654-Park.jpg"
-  },
-  {
    "address": "3726 Neverland Drive",
     "city": "New Smyrna Beach",
     "bedrooms": "4",
@@ -97,5 +75,16 @@
     "desc":  "This beautiful 3/2.5 pool home sits on 1+ acre nestled in a secluded private wooded sanctuary. Home features a whole house Onan generator, new carpet in the living room, fireplace, a heated 15X30 pool, completely screened in with a large porch. Master bedroom has access to the pool and has his and hers walk in closets. Spacious 3 car garage and a detached workshop/studio that can easily be converted to a guest /in-law suite.",
     "link": "https://www.flexmls.com/share/AGNoF/2580-Toups-Trail-Titusville-FL-32780",
     "image": "img/2580-Toups.jpg"
+     },
+    {
+   "address": "2566 Christopher Drive",
+    "city": "Titusville",
+    "bedrooms": "4",
+    "bathrooms": "2",
+    "sqft": 2320,
+    "price": "$549,900",
+    "desc":  "Welcome to your Energy-Efficient Oasis - Spectacular, 4BR/2BA spacious, custom pool home nestled in a gated, quiet HOA community. This beautifully maintained home features an open floor plan with vaulted ceilings, and formal living and dining rooms. The large family room, adorned with a wood burning stone fireplace, is perfect for gatherings. The heart of the home boasts refinished kitchen cabinets (2021), granite countertops and a convenient walk-in pantry. Separate laundry room off kitchen and garage. A stunning heated in-ground swimming pool with jacuzzi makes this area your retreat from a long day. The pool patio has an extra-large screened-in lanai, with an outdoor kitchen, and a fenced in yard for privacy. Reclaimed water system waters yard and landscaping. Roof (12 yrs.), solar panels (3 yrs.), AC (new) and gas appliances (water and pool heater and stove/range). This home offers easy access to schools, shopping, dining, and entertainment.",
+    "link": "https://www.flexmls.com/share/AKxzr/2566-Christopher-Drive-Titusville-FL-32780",
+    "image": "img/2566-christopher.jpg"
      }
 ]
