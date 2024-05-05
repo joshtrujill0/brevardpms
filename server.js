@@ -7,7 +7,7 @@ dotenv.config({ path: "/home/josh/environment-variables/config.env" });
 
 //Use for localhost - test
 // dotenv.config({ path: "./config.env" });
-//##################### Configure .env File for application #####################
+// ##################### Configure .env File for application #####################
 
 const port = process.env.PORT;
 const env = process.env.NODE_ENV;

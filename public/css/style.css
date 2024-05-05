@@ -750,7 +750,7 @@ footer {
 
 .review-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 2rem; }
   @media (max-width: 56.25em) {
     .review-cards {
@@ -1003,7 +1003,7 @@ footer {
   border: 1px solid #a9a9a9;
   border-radius: 2rem;
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
-  padding: 1rem;
+  padding: 1.2rem 1.8rem;
   align-items: center; }
   .agent__desc {
     margin-right: auto;
