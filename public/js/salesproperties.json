@@ -108,5 +108,16 @@
     "desc":  " Double lot on a corner available to build your new home in an up and coming community . 150 Feet of road frontage on 2 sides", 
     "link": "https://www.flexmls.com/share/ANn6E/0000-Central-Parkway-DeLand-FL-32724",
     "image": "img/0000-central.jpg"
-     }
+     },
+       {
+   "address": "452 Cressa Cir",
+    "city": "Cocoa",
+    "bedrooms": "3",
+    "bathrooms": "2",
+    "sqft": 1957,
+    "price": "$349,999",
+    "desc":  "Location, Location, Location!! Welcome to Fern Meadows subdivision where you will find this nicely appointed split plan 3 bedroom 2 bath home. As you enter the foyer area there is a formal living and dining room that leads you into the kitchen and great room area. Spacious kitchen has stainless appliances, breakfast bar and built in office/homework nook. The great room has ceramic tile flooring and sliding shutters/door to screened in back patio. The master bedroom boasts a walk in shower, garden tub, and walk in closet. The guest bedrooms have a small den area between that can be used for play/sitting area. There is an Inside laundry/utility room, 2 car garage, and white vinyl privacy fenced back yard. Great location for commuting to all major highways, central Florida, beaches, and the Kennedy Space Center.", 
+    "link": "https://www.flexmls.com/share/APEIg/452-Cressa-Circle-Cocoa-FL-32926",
+    "image": "img/452-cressa"
+     }  
 ]
