@@ -1,15 +1,4 @@
 [
-   {
-   "address": "2721 Riviera Drive",
-    "city": "Titusville",
-    "bedrooms": "4",
-    "bathrooms": "2",
-    "sqft": 1766,
-    "price": "$292,000",
-    "desc": "This spacious home is located in a desirable neighborhood and offers the ideal blend of comfort, convenience, and entertainment possibilities. This 4-bedroom, 2-bathroom home is situated on a spacious lot with a two-car garage, and extra wide driveway. As you step inside, you will be greeted by a cozy living space that exudes warmth and character. This cozy home features a practical layout that provides ample space for a growing family and/or guests. In addition to the cozy living area, the home also features a formal living room, perfect for hosting guests or enjoying quiet evenings with loved ones. The home also features custom shelving throughout for more storage. The heart of the home is the well-appointed kitchen, a chef's paradise boasting durable Corian countertops, (some) stainless-steel appliances, lots of cabinet space, and a small custom bar area, ideal for hosting gatherings or enjoying casual meals with loved ones. There is a breakfast nook next to the kitchen with sliding doors that open up to the screened porch that you can enjoy year-round. Outside, youll find a spacious fenced-in backyard, complete with a storage shed, offering plenty of room for outdoor activities, gardening, or simply relaxing in the shade. The roof was replaced in 2010, HVAC 2020. This home also has hurricane shutters. Located near shopping, dining, parks, entertainment, and top-rated schools",
-    "link": "https://www.flexmls.com/share/AIXlP/2721-Riviera-Drive-Titusville-FL-32780",
-    "image": "img/2721-Riviera.jpg"
-  },
   {
    "address": "3726 Neverland Drive",
     "city": "New Smyrna Beach",
@@ -108,5 +97,16 @@
     "desc":  "Location, Location, Location!! Welcome to Fern Meadows subdivision where you will find this nicely appointed split plan 3 bedroom 2 bath home. As you enter the foyer area there is a formal living and dining room that leads you into the kitchen and great room area. Spacious kitchen has stainless appliances, breakfast bar and built in office/homework nook. The great room has ceramic tile flooring and sliding shutters/door to screened in back patio. The master bedroom boasts a walk in shower, garden tub, and walk in closet. The guest bedrooms have a small den area between that can be used for play/sitting area. There is an Inside laundry/utility room, 2 car garage, and white vinyl privacy fenced back yard. Great location for commuting to all major highways, central Florida, beaches, and the Kennedy Space Center.", 
     "link": "https://www.flexmls.com/share/APEIg/452-Cressa-Circle-Cocoa-FL-32926",
     "image": "img/452-cressa.jpg"
+     }  
+      {,
+   "address": "6725 Caliph Ave",
+    "city": "Cocoa",
+    "bedrooms": "3",
+    "bathrooms": "2",
+    "sqft": 2311,
+    "price": "$379,000",
+    "desc":  "A MUST SEE! Sought after Half acre, corner lot in Port St John - Double Lot with very spacious back yard for all of your back yard entertainment needs or maybe add a large pool! This 4 bedroom, 2 1/2 bath home has a 2 car garage with a large screen porch to relax. Walking into the foyer, double glass doors open up to a formal living room and dining room. The master suite has 2 walk in closets, a jetted tub & separate shower and 2 sink areas. The kitchen has a bar area for stools and a small eat in area. A family room is also off the kitchen. # other bedrooms and a full bath are down another hallway. The back yard has a chain link fenced off area if you have pets. Close to Schools, medical, shopping & restaurants with easy access to the interstate", 
+    "link": "https://www.flexmls.com/share/ARfyR/6725-Caliph-Avenue-Cocoa-FL-32927",
+    "image": "img/6725-Caliph"
      }  
 ]
