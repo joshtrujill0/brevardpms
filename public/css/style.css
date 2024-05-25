@@ -1444,12 +1444,13 @@ footer {
   z-index: 8;
   display: flex;
   justify-content: center;
-  padding-top: 40rem; }
+  padding-top: 40rem;
+  padding-bottom: 2rem; }
   @media (max-width: 56.25em) {
     .agent-block {
       align-items: center;
       text-align: center;
-      flex-direction: column;
+      flex-direction: column-reverse;
       padding-top: 2rem; } }
 
 .agent-info {
@@ -1487,10 +1488,11 @@ footer {
 .agent-img {
   height: 30rem;
   aspect-ratio: 1;
-  border-radius: 100vmax; }
+  border-radius: 100vmax;
+  margin-bottom: 2rem; }
   @media (max-width: 56.25em) {
     .agent-img {
-      height: 20rem; } }
+      height: 10rem; } }
 
 .privacy {
   display: grid;
