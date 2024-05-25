@@ -7,4 +7,6 @@ router.get("/tenants", viewController.tenants);
 router.get("/sales", viewController.sales);
 router.get("/privacy", viewController.privacy);
 
+router.get("/lorrie-lovett", viewController.lorrielovett);
+
 module.exports = router;
