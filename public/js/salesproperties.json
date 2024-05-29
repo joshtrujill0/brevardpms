@@ -49,7 +49,7 @@
     "bedrooms": "3",
     "bathrooms": "2.5",
     "sqft": 1858,
-    "price": "$567,928",
+    "price": "$517,928",
     "desc":  "This beautiful 3/2.5 pool home sits on 1+ acre nestled in a secluded private wooded sanctuary. Home features a whole house Onan generator, new carpet in the living room, fireplace, a heated 15X30 pool, completely screened in with a large porch. Master bedroom has access to the pool and has his and hers walk in closets. Spacious 3 car garage and a detached workshop/studio that can easily be converted to a guest /in-law suite.",
     "link": "https://www.flexmls.com/share/AGNoF/2580-Toups-Trail-Titusville-FL-32780",
     "image": "img/2580-Toups.jpg"
@@ -121,7 +121,7 @@
     "image": "img/3455-ayrshire.jpg"
      },  
       {
-   "address": "4520 Apollo Road,
+   "address": "4520 Apollo Road",
     "city": "Titusville",
     "bedrooms": "3",
     "bathrooms": "2",
@@ -130,5 +130,16 @@
     "desc":  " Great starter or retirement home! This concrete block 3-bedroom home is conveniently located within a short drive to beaches, space center, major highways, shopping and dining. Tesla solar package with whole house back up, insulated windows and water heater 2019, new sewer line from house to street, new impact rated front door, and private well w/sprinklers. Oversized car port, fenced yard, utility room, and exterior shed. Don't let this one pass you by!", 
     "link": "https://www.flexmls.com/share/AUWLi/4520-Apollo-Road-Titusville-FL-32780",
     "image": "img/4520-Apollo"
+     },
+        {
+   "address": "190 E. Olmstead Drive 1",
+    "city": "Titusville",
+    "bedrooms": "2",
+    "bathrooms": "1",
+    "sqft": 1054,
+    "price": "$215,895",
+    "desc":  "First of all, the VIEWS!! You can see the water from all windows. Watch dolphins, manatees and Rockets from your private front or back porch. Completely redone inside featuring: great room with East facing water views to catch the sunrise. Large working kitchen with tons of storage, granite countertops, high-end Samsung range, double sinks and breakfast bar. Tiled handicap shower, new (2022) double hung hurricane impact windows with custom fit blinds, external hurricane shutters, new (2023) water heater, A/C (2018), tile in public rooms, wood laminate floors in bedrooms, and lighted ceiling fans in all rooms. Community pool being resurfaced, enjoy the clubhouse and dock. Awesome view of the VAB from the dock. Close to all shopping, Orlando and Kennedy Space Center. The only thing missing is you.", 
+    "link": "https://www.flexmls.com/share/AUWX2/190-E-Olmstead-Drive-1-Titusville-FL-32780",
+    "image": "img/190-olmstead1"
      }  
 ]
