@@ -8,5 +8,6 @@ router.get("/sales", viewController.sales);
 router.get("/privacy", viewController.privacy);
 
 router.get("/lorrie-lovett", viewController.lorrielovett);
+router.get("/idx", viewController.idx);
 
 module.exports = router;
