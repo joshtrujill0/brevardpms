@@ -25,3 +25,7 @@ exports.tenants = async (req, res) => {
 exports.lorrielovett = (req, res) => {
   res.status(200).render("lorrie");
 };
+
+exports.idx = (req, res) => {
+  res.status(200).render("idx");
+};
