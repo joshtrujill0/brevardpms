@@ -210,7 +210,7 @@ header {
   .mobile-toggle {
     display: block;
     position: absolute;
-    background: url("/img/mobile-menu.svg");
+    background: url("https://brevardpms.com/img/mobile-menu.svg");
     background-repeat: no-repeat;
     width: 3.4rem;
     aspect-ratio: 1;
