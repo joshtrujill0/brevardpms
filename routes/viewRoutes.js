@@ -8,6 +8,7 @@ router.get("/sales", viewController.sales);
 router.get("/privacy", viewController.privacy);
 router.get("/property-management", viewController.propertyManagement);
 
+<<<<<<< HEAD
 router.get("/lorrie-lovett", viewController.lorrie);
 router.get("/lexi-lovett", viewController.lexi);
 router.get("/donna-sprague", viewController.donna);
@@ -19,6 +20,9 @@ router.get("/steve-keener", viewController.steve);
 router.get("/vanessa-irizarry", viewController.vanessa);
 router.get("/susan-ellsworth", viewController.susan);
 router.get("/scott-sharp", viewController.scott);
+=======
+router.get("/lorrie-lovett", viewController.lorrielovett);
+>>>>>>> f0e1ecb0c4702c1538e61c5c5cbfe04028df4bf9
 router.get("/idx", viewController.idx);
 
 module.exports = router;
