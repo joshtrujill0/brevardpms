@@ -30,7 +30,6 @@ exports.lorrie = (req, res) => {
   res.status(200).render("lorrie");
 };
 
-<<<<<<< HEAD
 exports.lexi = (req, res) => {
   res.status(200).render("lexi");
 };
@@ -71,8 +70,6 @@ exports.scott = (req, res) => {
   res.status(200).render("scott");
 };
 
-=======
->>>>>>> f0e1ecb0c4702c1538e61c5c5cbfe04028df4bf9
 exports.idx = (req, res) => {
   res.status(200).render("idx");
 };
