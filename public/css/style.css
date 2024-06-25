@@ -17,7 +17,7 @@
 .overlay-agent, .hero-background-agent {
   top: 0;
   left: 0;
-  height: 140vh;
+  height: 200vh;
   width: 100%;
   position: absolute; }
 
@@ -234,7 +234,8 @@ footer {
   display: grid;
   grid-template-columns: [full-start] minmax(1.8rem, 1fr) [content-start] repeat(8, [col-start] minmax(4rem, 18rem) [col-end]) [content-end] minmax(1.8rem, 1fr) [full-end];
   grid-column: full-start / full-end;
-  padding: 3rem 0rem; }
+  padding: 3rem 0rem;
+  z-index: 2; }
 
 .main {
   grid-column: content-start / content-end;
