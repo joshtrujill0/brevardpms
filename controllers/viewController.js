@@ -13,6 +13,10 @@ exports.privacy = (req, res) => {
   res.status(200).render("privacy");
 };
 
+exports.propertyManagement = (req, res) => {
+  res.status(200).render("property-management");
+};
+
 exports.tenants = async (req, res) => {
   const endpoint = process.env.RENTEC_LINK;
   const rentec = await axios.post(endpoint);
@@ -22,6 +26,50 @@ exports.tenants = async (req, res) => {
   });
 };
 
-exports.lorrielovett = (req, res) => {
+exports.lorrie = (req, res) => {
   res.status(200).render("lorrie");
+};
+
+exports.lexi = (req, res) => {
+  res.status(200).render("lexi");
+};
+
+exports.donna = (req, res) => {
+  res.status(200).render("donna");
+};
+
+exports.tony = (req, res) => {
+  res.status(200).render("tony");
+};
+
+exports.betty = (req, res) => {
+  res.status(200).render("betty");
+};
+
+exports.carmen = (req, res) => {
+  res.status(200).render("carmen");
+};
+
+exports.traci = (req, res) => {
+  res.status(200).render("traci");
+};
+
+exports.steve = (req, res) => {
+  res.status(200).render("steve");
+};
+
+exports.vanessa = (req, res) => {
+  res.status(200).render("vanessa");
+};
+
+exports.susan = (req, res) => {
+  res.status(200).render("susan");
+};
+
+exports.scott = (req, res) => {
+  res.status(200).render("scott");
+};
+
+exports.idx = (req, res) => {
+  res.status(200).render("idx");
 };

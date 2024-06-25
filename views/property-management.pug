@@ -1,0 +1,106 @@
+extends base
+
+block title
+    title Brevard Property Management Services
+
+
+block content
+    main
+        section#hero
+            .overlay
+            picture.hero-background
+                source(srcset="/img/pm-mobile.jpg" media="(max-width: 43.75em)")
+                img.hero-background(src="/img/pm-desktop.jpg", alt="")
+            .hero-block
+                h1.hero-block__main-heading Reliable Property Management Services 
+                p.hero-block__slogan We help landlords with management by providing professional service, experienced guidance, and efficient technology to create an easy rental experience. 
+                .cta-buttons
+                    a(href="https://secure.rentecdirect.com/powners/login.php").hero-cta Owner Portal
+                    a(href="https://secure.rentecdirect.com/tenants/login.php").team-button Tenant Portal
+
+        section#benefits
+            .benefits-block 
+                h3 How we make property management #[span.gray-heading__accent easy for you]
+                .cards-container
+                    .card
+                        svg.card__icon: use(xlink:href="img/bpms-sprite.svg#marketing")   
+                        h4.card__title effective advertising 
+                        p.card__text We prioritize online methods to reach many interested renters. Our owners should never have to worry about extended vacancies due to a lack of marketing.
+                    .card
+                        svg.card__icon: use(xlink:href="img/bpms-sprite.svg#application")
+                        h4.card__title screening process 
+                        p.card__text We want to safeguard that our property owners get the caliber of renters they deserve. We utilize a 6 Step Screening process on each and every adult rental applicant.
+                    .card
+                        svg.card__icon: use(xlink:href="img/bpms-sprite.svg#24-7")
+                        h4.card__title on call 24/7 
+                        p.card__text Management of rental properties does not stop at 5:00 PM. Our property manager is on call 24 hours a day to handle any situation for our owners and our tenants.
+                    .card
+                        svg.card__icon: use(xlink:href="img/bpms-sprite.svg#money")
+                        h4.card__title electronic payments 
+                        p.card__text We utilize direct deposit. An online portal can be activated that will allow unlimited access to the details of your account showing all rental income and disbursements.
+
+                
+        section#more-benefits
+            .more-benefits__heading
+                h3 Your investment is our #[span.gray-heading-smaller__accent top priority] 
+            .more-benefits__information 
+                //- h3 Your investment is our #[span.gray-heading-smaller__accent top priority]
+                ul
+                    li.benefits 
+                        //- svg.benefits__icon: use(xlink:href="img/bpms-sprite.svg#checkbox")
+                        p.benefits__text 20 years real estate and management experience
+                    li.benefits 
+                        //- svg.benefits__icon: use(xlink:href="img/bpms-sprite.svg#checkbox")
+                        p.benefits__text Strong local vendor relations for repairs &amp; maintenance
+                    li.benefits 
+                        //- svg.benefits__icon: use(xlink:href="img/bpms-sprite.svg#checkbox")
+                        p.benefits__text Online portals for transactions and reports 
+
+        section#landlord-faq
+            .landlord-faqs-block
+                h3 Landlord FAQs 
+                .landlord-faqs 
+                    .faq
+                        .question 
+                            h3 Who pays for maintenance costs?
+                            svg: use(xlink:href="img/bpms-sprite.svg#right-chevron")
+                        .answer
+                            p Your property Manager will facilitate the maintenance request but the cost will be the responsibility of the Owner.
+                    .faq
+                        .question 
+                            h3 What out of pocket expenses should I consider?
+                            svg: use(xlink:href="img/bpms-sprite.svg#right-chevron")
+                        .answer
+                            p Our company&apos;s only fee is our management fee.
+                    .faq
+                        .question 
+                            h3 What is the tenant screening process?
+                            svg: use(xlink:href="img/bpms-sprite.svg#right-chevron")
+                        .answer
+                            p Prospective tenants will be screened for national criminal background, credit history, evictions, and pedophile. The current/previous rental history and current employment/income will be verified. 
+                    .faq
+                        .question 
+                            h3 How is the property rent determined?
+                            svg: use(xlink:href="img/bpms-sprite.svg#right-chevron")
+                        .answer
+                            p Rental Rates are determined by the current market in your area.
+                    .faq
+                        .question 
+                            h3 What is the duration of a typical lease?
+                            svg: use(xlink:href="img/bpms-sprite.svg#right-chevron")
+                        .answer
+                            p For long term rentals, typical leases are for one year and under certain circumstances can be agreed upon for two years. Due to law changes, we do not recommend leases for longer than 2 years. Short term rentals are anything less than 6 months and require a sales tax account through the Florida Dept of Revenue with quarterly or monthly filings.
+                    .faq
+                        .question 
+                            h3 How are maintenance costs handled?
+                            svg: use(xlink:href="img/bpms-sprite.svg#right-chevron")
+                        .answer
+                            p Maintenance costs that are under $500 will be covered by the management company and then deducted from the next month&apos;s rental proceeds. Any repair over $500, we will ask the owner to pay the vendor directly.
+                    .faq
+                        .question 
+                            h3 Should I allow pets?
+                            svg: use(xlink:href="img/bpms-sprite.svg#right-chevron")
+                        .answer
+                            p Allowing pets is a personal choice for most clients. Please note that Service animals are not considered pets, it&apos;s a disability defined by the ADA. Service animals can not be denied so long as their owners provide proper documentation.
+    script(src='/js/homepage.js' defer)
+    script(src='/js/form.js' defer)

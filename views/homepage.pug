@@ -1,7 +1,7 @@
 extends base
 
 block title
-    title Brevard Property Management
+    title Brevard Property Management And Sales
 
 
 block content
@@ -18,49 +18,101 @@ block content
                     a(href="#contact").hero-cta property management
                     a(href="/sales").team-button I'm looking to buy or sell
 
-        section#benefits
-            .benefits-block 
-                h3 How we make property management #[span.gray-heading__accent easy for you]
-                .cards-container
-                    .card
-                        svg.card__icon: use(xlink:href="img/bpms-sprite.svg#marketing")   
-                        h4.card__title effective advertising 
-                        p.card__text We prioritize online methods to reach many interested renters. Our owners should never have to worry about extended vacancies due to a lack of marketing.
-                    .card
-                        svg.card__icon: use(xlink:href="img/bpms-sprite.svg#application")
-                        h4.card__title screening process 
-                        p.card__text We want to safeguard that our property owners get the caliber of renters they deserve. We utilize a 6 Step Screening process on each and every adult rental applicant.
-                    .card
-                        svg.card__icon: use(xlink:href="img/bpms-sprite.svg#24-7")
-                        h4.card__title on call 24/7 
-                        p.card__text Management of rental properties does not stop at 5:00 PM. Our property manager is on call 24 hours a day to handle any situation for our owners and our tenants.
-                    .card
-                        svg.card__icon: use(xlink:href="img/bpms-sprite.svg#money")
-                        h4.card__title electronic payments 
-                        p.card__text We utilize direct deposit. An online portal can be activated that will allow unlimited access to the details of your account showing all rental income and disbursements.
+        section#idxtest
+            .idxtest-block 
+                <script charset="UTF-8" type="text/javascript" id="idxwidgetsrc-37131" src="//brevardpms.idxbroker.com/idx/quicksearchjs.php?widgetid=37131"></script>
+        //-         .cards-container
+        //-             .card
+        //-                 svg.card__icon: use(xlink:href="img/bpms-sprite.svg#marketing")   
+        //-                 h4.card__title effective advertising 
+        //-                 p.card__text We prioritize online methods to reach many interested renters. Our owners should never have to worry about extended vacancies due to a lack of marketing.
+        //-             .card
+        //-                 svg.card__icon: use(xlink:href="img/bpms-sprite.svg#application")
+        //-                 h4.card__title screening process 
+        //-                 p.card__text We want to safeguard that our property owners get the caliber of renters they deserve. We utilize a 6 Step Screening process on each and every adult rental applicant.
+        //-             .card
+        //-                 svg.card__icon: use(xlink:href="img/bpms-sprite.svg#24-7")
+        //-                 h4.card__title on call 24/7 
+        //-                 p.card__text Management of rental properties does not stop at 5:00 PM. Our property manager is on call 24 hours a day to handle any situation for our owners and our tenants.
+        //-             .card
+        //-                 svg.card__icon: use(xlink:href="img/bpms-sprite.svg#money")
+        //-                 h4.card__title electronic payments 
+        //-                 p.card__text We utilize direct deposit. An online portal can be activated that will allow unlimited access to the details of your account showing all rental income and disbursements.
 
         section#team
             .team__information 
-                h3 A knowledgable and professional team behind your property
-                p Brevard Property Management &amp; Sales, LLC. is a real estate company located in Titusville, Florida. We specialize in both property management and real estate sales. <br><br>We help both landlords and tenants with each side of the rental process and management by providing professional service, experienced guidance, and efficient technology to create an easy rental experience. <br><br>If you are looking to buy or sell a home, we also have a team for assisting with real estate transactions.<br><br>Working with people requires open communication at all times. We believe that the personal relationships that our team has developed over the years will keep us on top of our profession.
-            .team__photo 
-                img(src="img/team.jpg", alt="brevardpms team members", loading="lazy") 
+                h3 Meet The Owners
+                p Brevard Property Management &amp; Sales, LLC. is a real estate company located in Titusville, Florida. We specialize in both property management and real estate sales. <br><br>With 20 years experience, Lorrie Lovett founded Brevard Property Management & Sales with her daughter, Lexi Lovett, in 2023 and have built a team to bring quality service to their clients.<br><br>Working with people requires open communication at all times. We believe that the personal relationships that our team has developed over the years will keep us on top of our profession.
+            //- .team__photo 
+            //-     img(src="img/team.jpg", alt="brevardpms team members", loading="lazy")
+                 
                 
-        section#more-benefits
-            .more-benefits__photos 
-                img(src="img/office.jpg", alt="brevardpms office", loading="lazy")
-            .more-benefits__information 
-                h3 Your investment is our #[span.gray-heading-smaller__accent top priority]
-                ul
-                    li.benefits 
-                        svg.benefits__icon: use(xlink:href="img/bpms-sprite.svg#checkbox")
-                        p.benefits__text 20 years real estate and management experience
-                    li.benefits 
-                        svg.benefits__icon: use(xlink:href="img/bpms-sprite.svg#checkbox")
-                        p.benefits__text Strong local vendor relations for repairs &amp; maintenance
-                    li.benefits 
-                        svg.benefits__icon: use(xlink:href="img/bpms-sprite.svg#checkbox")
-                        p.benefits__text Online owner &amp; tenant portals for transactions and reports
+        //- section#more-benefits
+        //-     .more-benefits__photos 
+        //-         img(src="img/office.jpg", alt="brevardpms office", loading="lazy")
+        //-     .more-benefits__information 
+        //-         h3 Your investment is our #[span.gray-heading-smaller__accent top priority]
+        //-         ul
+        //-             li.benefits 
+        //-                 svg.benefits__icon: use(xlink:href="img/bpms-sprite.svg#checkbox")
+        //-                 p.benefits__text 20 years real estate and management experience
+        //-             li.benefits 
+        //-                 svg.benefits__icon: use(xlink:href="img/bpms-sprite.svg#checkbox")
+        //-                 p.benefits__text Strong local vendor relations for repairs &amp; maintenance
+        //-             li.benefits 
+        //-                 svg.benefits__icon: use(xlink:href="img/bpms-sprite.svg#checkbox")
+        //-                 p.benefits__text Online owner &amp; tenant portals for transactions and reports
+        section#agents 
+            .agents-block 
+                h3 A Dedicated Team of Locals
+                p.about-team With a commitment to excellence, our team is dedicated to helping you buy or sell your home with expertise and professionalism. Our team comprises knowledgeable professionals who are not just Realtors, but also proud locals of the area we serve. 
+                .agent-profiles 
+                    ul.agent-new  
+                        li 
+                            a(href="/lorrie-lovett"): img(src="/img/lorrie.jpg", alt="Lorrie Lovett")
+                            p Lorrie Lovett
+                        li 
+                            a(href="/lexi-lovett"): img(src="/img/lexi.jpg", alt="Lexi Lovett")
+                            p Lexi Lovett
+                        li 
+                            a(href="/carmen-minthorn"): img(src="/img/carman.jpg", alt="Carmen Minthorn")
+                            p Carmen Minthorn
+                        li 
+                            a(href="/donna-sprague"): img(src="/img/donna.jpg", alt="Donna Sprague")
+                            p Donna Sprague
+                        li 
+                            a(href="/steve-keener"): img(src="/img/steve.jpg", alt="Steve Keener")
+                            p Steve Keener 
+                        li 
+                            a(href="/susan-ellsworth"): img(src="/img/susan.jpg", alt="Susan Ellsworth")
+                            p Susan Ellsworth 
+                        li 
+                            a(href="/vanessa-irizarry"): img(src="/img/vanessa.jpg", alt="Vanessa Irizarry")
+                            p Vanessa Irizarry 
+                        li 
+                            a(href="/traci-harrell"): img(src="/img/traci.jpg", alt="Traci Harrell")
+                            p Traci Harrell 
+                        li 
+                            a(href="/scott-sharp"): img(src="/img/scott.jpg", alt="Scott Sharp")
+                            p Scott Sharp 
+                        li 
+                            a(href="/betty-buddemeyer"): img(src="/img/betty.jpg", alt="Betty Buddemeyer")
+                            p Betty Buddemeyer 
+                        li 
+                            a(href="/tony-dubravski"): img(src="/img/tony.jpg", alt="Tony Dubravski")
+                            p Tony Dubravski
+                //- .company-stats 
+                //-     ul.stats 
+                //-         li.stats__block 
+                //-             h4.stats__numeric $1MM+
+                //-             p.stats__stat total company sales
+                //-         li.stats__block 
+                //-             h4.stats__numeric 64
+                //-             p.stats__stat 2023 transactions
+                //-         li.stats__block 
+                //-             h4.stats__numeric 12
+                //-             p.stats__stat dedicated team members 
+                        
         section#reviews
             .reviews-block
                 h3 what our clients are saying
@@ -109,9 +161,10 @@ block content
                             svg.star: use(xlink:href="img/bpms-sprite.svg#star")
 
         section#contact
-            .contact-block
-                h3 Put a dedicated team behind your property today
-                p Learn more about our management services or buy/sales team and how we can help you
+            .contact-block__heading
+                h3 Simplify Real Estate with a Dedicated Team
+                p Learn more about our management or sales services and how we can help you with your real estate journey today
+            .contact-block__form
                 form#homepage-contact-form
                     label(for="firstname") First name
                     input(type="text" id="firstname" name="firstname" placeholder="John" required)
@@ -125,57 +178,51 @@ block content
                     textarea( id="message" name="message" placeholder="How we can help you and any relevant information you'd like to provide" rows="6" required)
                     input.submit(type="submit" value="submit")  
 
-        section#landlord-faq
-            .landlord-faqs-block
-                h3 Landlord FAQs 
-                .landlord-faqs 
-                    .faq
-                        .question 
-                            h3 Who pays for maintenance costs?
-                            svg: use(xlink:href="img/bpms-sprite.svg#right-chevron")
-                        .answer
-                            p Your property Manager will facilitate the maintenance request but the cost will be the responsibility of the Owner.
-                    .faq
-                        .question 
-                            h3 What out of pocket expenses should I consider?
-                            svg: use(xlink:href="img/bpms-sprite.svg#right-chevron")
-                        .answer
-                            p Our company&apos;s only fee is our management fee.
-                    .faq
-                        .question 
-                            h3 What is the tenant screening process?
-                            svg: use(xlink:href="img/bpms-sprite.svg#right-chevron")
-                        .answer
-                            p Prospective tenants will be screened for national criminal background, credit history, evictions, and pedophile. The current/previous rental history and current employment/income will be verified. 
-                    .faq
-                        .question 
-                            h3 How is the property rent determined?
-                            svg: use(xlink:href="img/bpms-sprite.svg#right-chevron")
-                        .answer
-                            p Rental Rates are determined by the current market in your area.
-                    .faq
-                        .question 
-                            h3 What is the duration of a typical lease?
-                            svg: use(xlink:href="img/bpms-sprite.svg#right-chevron")
-                        .answer
-                            p For long term rentals, typical leases are for one year and under certain circumstances can be agreed upon for two years. Due to law changes, we do not recommend leases for longer than 2 years. Short term rentals are anything less than 6 months and require a sales tax account through the Florida Dept of Revenue with quarterly or monthly filings.
-                    .faq
-                        .question 
-                            h3 How are maintenance costs handled?
-                            svg: use(xlink:href="img/bpms-sprite.svg#right-chevron")
-                        .answer
-                            p Maintenance costs that are under $500 will be covered by the management company and then deducted from the next month&apos;s rental proceeds. Any repair over $500, we will ask the owner to pay the vendor directly.
-                    .faq
-                        .question 
-                            h3 Should I allow pets?
-                            svg: use(xlink:href="img/bpms-sprite.svg#right-chevron")
-                        .answer
-                            p Allowing pets is a personal choice for most clients. Please note that Service animals are not considered pets, it&apos;s a disability defined by the ADA. Service animals can not be denied so long as their owners provide proper documentation.
-                    //- .faq
-                    //-     .question 
-                    //-         h3 question 8
-                    //-         svg: use(xlink:href="img/bpms-sprite.svg#right-chevron")
-                    //-     .answer
-                    //-         p answer to the question 8
+        //- section#landlord-faq
+        //-     .landlord-faqs-block
+        //-         h3 Landlord FAQs 
+        //-         .landlord-faqs 
+        //-             .faq
+        //-                 .question 
+        //-                     h3 Who pays for maintenance costs?
+        //-                     svg: use(xlink:href="img/bpms-sprite.svg#right-chevron")
+        //-                 .answer
+        //-                     p Your property Manager will facilitate the maintenance request but the cost will be the responsibility of the Owner.
+        //-             .faq
+        //-                 .question 
+        //-                     h3 What out of pocket expenses should I consider?
+        //-                     svg: use(xlink:href="img/bpms-sprite.svg#right-chevron")
+        //-                 .answer
+        //-                     p Our company&apos;s only fee is our management fee.
+        //-             .faq
+        //-                 .question 
+        //-                     h3 What is the tenant screening process?
+        //-                     svg: use(xlink:href="img/bpms-sprite.svg#right-chevron")
+        //-                 .answer
+        //-                     p Prospective tenants will be screened for national criminal background, credit history, evictions, and pedophile. The current/previous rental history and current employment/income will be verified. 
+        //-             .faq
+        //-                 .question 
+        //-                     h3 How is the property rent determined?
+        //-                     svg: use(xlink:href="img/bpms-sprite.svg#right-chevron")
+        //-                 .answer
+        //-                     p Rental Rates are determined by the current market in your area.
+        //-             .faq
+        //-                 .question 
+        //-                     h3 What is the duration of a typical lease?
+        //-                     svg: use(xlink:href="img/bpms-sprite.svg#right-chevron")
+        //-                 .answer
+        //-                     p For long term rentals, typical leases are for one year and under certain circumstances can be agreed upon for two years. Due to law changes, we do not recommend leases for longer than 2 years. Short term rentals are anything less than 6 months and require a sales tax account through the Florida Dept of Revenue with quarterly or monthly filings.
+        //-             .faq
+        //-                 .question 
+        //-                     h3 How are maintenance costs handled?
+        //-                     svg: use(xlink:href="img/bpms-sprite.svg#right-chevron")
+        //-                 .answer
+        //-                     p Maintenance costs that are under $500 will be covered by the management company and then deducted from the next month&apos;s rental proceeds. Any repair over $500, we will ask the owner to pay the vendor directly.
+        //-             .faq
+        //-                 .question 
+        //-                     h3 Should I allow pets?
+        //-                     svg: use(xlink:href="img/bpms-sprite.svg#right-chevron")
+        //-                 .answer
+        //-                     p Allowing pets is a personal choice for most clients. Please note that Service animals are not considered pets, it&apos;s a disability defined by the ADA. Service animals can not be denied so long as their owners provide proper documentation.
     script(src='/js/homepage.js' defer)
     script(src='/js/form.js' defer)
