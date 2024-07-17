@@ -117,8 +117,8 @@ block content
                                         p.address= listing.address 
                                             p.rent= listing.priceData.value.formatted
                                     p.sqft=`${listing.sqFt || "n/a"} SQFT`
-                                    p.description= listing.remarksConcat
-                                a.apply(href=`${listing.fullDetailsURL}`): span More Info
+                                    p.description= listing.remarksConcat.substring(0,550) + "..."
+                                a.apply(href=`${listing.fullDetailsURL}`): span More Info 
 
                         //- .property-card 
                         //-     .property-images 
