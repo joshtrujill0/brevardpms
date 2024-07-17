@@ -1487,19 +1487,23 @@ footer {
   grid-column-gap: 2rem;
   grid-row-gap: 2rem; }
 
-.property-card {
+.property-card,
+.IDX-showcaseContainer {
   display: flex;
   flex-direction: column;
   background-color: #fff;
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2); }
-  .property-card img {
+  .property-card img,
+  .IDX-showcaseContainer img {
     aspect-ratio: 14 / 9; }
-  .property-card__info {
+  .property-card__info,
+  .IDX-showcaseContainer__info {
     display: flex;
     background-color: #e7e7e7;
     padding: 1rem;
     align-items: center; }
-  .property-card__desc {
+  .property-card__desc,
+  .IDX-showcaseContainer__desc {
     flex-grow: 1; }
 
 .apply {
@@ -1564,6 +1568,9 @@ footer {
 .address-box {
   display: flex;
   align-items: center; }
+
+.rental {
+  display: none; }
 
 #agent {
   display: grid;

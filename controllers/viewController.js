@@ -1,12 +1,22 @@
 const { default: axios } = require("axios");
-const properties = require("../public/js/salesproperties.json");
+// const properties = require("../public/js/salesproperties.json");
 
 exports.base = (req, res) => {
   res.status(200).render("homepage");
 };
 
-exports.sales = (req, res) => {
-  res.status(200).render("sales", { properties });
+// exports.sales = (req, res) => {
+//   res.status(200).render("sales", { properties });
+// };
+
+exports.sales = async (req, res) => {
+  const endpoint = process.env.IDX_LINK;
+  const key = process.env.IDX_KEY;
+  const idx = await axios.get(endpoint, {
+    headers: { accesskey: key },
+  });
+  const listings = idx.data.data;
+  res.status(200).render("sales", { listings });
 };
 
 exports.privacy = (req, res) => {

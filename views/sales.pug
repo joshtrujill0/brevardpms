@@ -101,23 +101,24 @@ block content
                 h3 Our Featured Properties For Sale
                 p.property-disclaimer We can still help you find other available properties. Contact us and our team will work to find the right home for you!
                 .properties 
+                    //- <script charset="UTF-8" type="text/javascript" id="idxwidgetsrc-43335" src="//search.brevardpms.com/idx/customshowcasejs.php?widgetid=43335"></script>
                     .sales-cards-block 
-                        for property in properties 
-                            .property-card 
+                        for listing in listings 
+                            .property-card(class=listing.rntLse)
                                 .property-images 
-                                    img(src=`${property.image}` loading="lazy")
+                                    img(src=`${listing.image[0].url}` loading="lazy")
                                 .property-card__info 
                                     svg.pin: use(xlink:href="img/bpms-sprite.svg#pin")
-                                    p.city= property.city 
-                                    p.bedrooms= `${property.bedrooms} bedrooms`
-                                    p.bathrooms= `${property.bathrooms} bathrooms`
+                                    p.city= listing.cityName
+                                    p.bedrooms= `${listing.bedrooms || "n/a"} bedrooms`
+                                    p.bathrooms= `${listing.fullBaths || "n/a"} bathrooms`
                                 .property-card__desc
                                     .address-box 
-                                        p.address= property.address 
-                                            p.rent= property.price
-                                    p.sqft=`${property.sqft} SQFT`
-                                    p.description= property.desc
-                                a.apply(href=`${property.link}`): span More Info
+                                        p.address= listing.address 
+                                            p.rent= listing.priceData.value.formatted
+                                    p.sqft=`${listing.sqFt || "n/a"} SQFT`
+                                    p.description= listing.remarksConcat
+                                a.apply(href=`${listing.fullDetailsURL}`): span More Info
 
                         //- .property-card 
                         //-     .property-images 
