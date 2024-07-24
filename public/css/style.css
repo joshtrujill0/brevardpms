@@ -1614,7 +1614,7 @@ footer {
   font-size: 4.4rem;
   font-weight: 500;
   color: #f9f9f9;
-  line-height: 1.2;
+  line-height: 1.1;
   text-transform: capitalize;
   margin-bottom: 4rem; }
 
@@ -1625,7 +1625,7 @@ footer {
   font-size: 2rem;
   font-weight: 100;
   color: #f9f9f9;
-  font-size: 2rem;
+  font-size: 1.4rem;
   margin-bottom: 2rem;
   width: 90%; }
   @media (max-width: 56.25em) {
