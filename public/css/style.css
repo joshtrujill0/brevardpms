@@ -200,7 +200,7 @@ header {
     position: fixed;
     inset: 0 0 0 50%;
     background-color: #138674;
-    padding: 40vh 0rem;
+    padding: 30vh 0rem;
     z-index: 9999;
     flex-direction: column;
     transform: translateX(100%);
