@@ -17,7 +17,7 @@
 .overlay-agent, .hero-background-agent {
   top: 0;
   left: 0;
-  height: 200vh;
+  height: 100vh;
   width: 100%;
   position: absolute; }
 
@@ -303,7 +303,8 @@ footer {
   display: flex; }
   .business-info__card:not(:last-of-type) {
     margin-bottom: 1rem; }
-  .business-info__card svg {
+  .business-info__card svg,
+  .business-info__card img {
     width: 2rem;
     fill: #f9f9f9;
     margin-right: 0.5rem; }

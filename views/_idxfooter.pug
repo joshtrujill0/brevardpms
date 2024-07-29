@@ -7,9 +7,10 @@ footer.footer
             h4 Browse
             nav
                 ul(role="list") 
-                    li: a(href="https://brevardpms.com/tenants#rental-listings"): span rentals
-                    li: a(href="https://brevardpms.com/sales"): span property sales
-                    li: a(href="https://brevardpms.com/#contact"): span contact 
+                    li: a(href="/property-management"): span property management
+                    li: a(href="/sales"): span property sales
+                    li: a(href="/tenants#rental-listings"): span rentals
+                    li: a(href="/#contact"): span contact 
                     li: a(href="https://secure.rentecdirect.com/powners/login.php"): span owner portal 
                     li: a(href="https://secure.rentecdirect.com/tenants/login.php"): span tenant portal
         .business-info 
@@ -19,7 +20,10 @@ footer.footer
                 address 3659 S Hopkins Ave. Suite A<br> Titusville FL, 32780  
             .business-info__card
                 svg: use(xlink:href="https://brevardpms.com/img/bpms-sprite.svg#phone")
-                a(href="tel:+13215555555") &#40;321&#41; 225-8771  
+                a(href="tel:+13215555555") &#40;321&#41; 225-8771
+            .business-info__card
+                img(src="img/email.svg", alt="")
+                a(href="mailto:office@brevardpms.com") office@brevardpms.com
     .realtor-disclaimer
         p All property listing information contained on this website is deemed reliable but not guaranteed. All properties are subject to prior sale, change or withdrawal notice. brevardpms.com believes all information to be correct but assumes no legal responsibility for accuracy.
     .legal
