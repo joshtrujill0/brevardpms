@@ -703,7 +703,7 @@ footer {
 
 .agent-new {
   display: grid;
-  grid-template-columns: repeat(11, 1fr);
+  grid-template-columns: repeat(10, 1fr);
   grid-gap: 1rem;
   margin: 2rem 0rem; }
   @media (max-width: 62.5em) {

@@ -17,7 +17,7 @@ router.get("/traci-harrell", viewController.traci);
 router.get("/steve-keener", viewController.steve);
 router.get("/vanessa-irizarry", viewController.vanessa);
 router.get("/susan-ellsworth", viewController.susan);
-router.get("/scott-sharp", viewController.scott);
+// router.get("/scott-sharp", viewController.scott);
 router.get("/lorrie-lovett", viewController.lorrie);
 router.get("/idx", viewController.idx);
 
