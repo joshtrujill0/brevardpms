@@ -5,7 +5,7 @@ const app = require("./app");
 //User for Ubuntu server
 dotenv.config({ path: "/home/josh/environment-variables/config.env" });
 
-//Use for localhost - test
+// Use for localhost - test
 // dotenv.config({ path: "./config.env" });
 // ##################### Configure .env File for application #####################
 

@@ -52,9 +52,9 @@ exports.tony = (req, res) => {
   res.status(200).render("tony");
 };
 
-exports.betty = (req, res) => {
-  res.status(200).render("betty");
-};
+// exports.betty = (req, res) => {
+//   res.status(200).render("betty");
+// };
 
 exports.carmen = (req, res) => {
   res.status(200).render("carmen");
