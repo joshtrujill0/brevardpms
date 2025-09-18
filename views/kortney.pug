@@ -1,0 +1,21 @@
+extends base
+
+block title
+    title Kortney Austin - BrevardPMS
+
+
+block content
+    main
+        section#agent
+            .overlay-agent
+            picture.hero-background-agent
+                source(srcset="/img/hero-mobile.jpg" media="(max-width: 43.75em)")
+                img.hero-background-agent(src="/img/hero-desktop.jpg", alt="")
+            .agent-block
+                .agent-info
+                    h1.agent-name Kortney Austin, Realtor
+                    p.agent-bio I’m proud to call Brevard home and love everything about the Space Coast, from our beaches to the incredible wildlife. Though I&apos;ve lived in Oregon, North Carolina, and California, Florida has always been where my heart is. My goal is to make your real estate journey simple, stress-free, and enjoyable.
+                    .cta-buttons
+                        a(href="tel:3212258771").hero-cta 321.225.8771
+                .agent-photo 
+                    img.agent-img(src="img/kortney.jpg", alt="Kortney Austin")

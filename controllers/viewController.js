@@ -76,9 +76,9 @@ exports.susan = (req, res) => {
   res.status(200).render("susan");
 };
 
-// exports.scott = (req, res) => {
-//   res.status(200).render("scott");
-// };
+exports.kortney = (req, res) => {
+  res.status(200).render("kortney");
+};
 
 exports.idx = (req, res) => {
   res.status(200).render("idx");

@@ -11,13 +11,12 @@ router.get("/lorrie-lovett", viewController.lorrie);
 router.get("/lexi-lovett", viewController.lexi);
 router.get("/donna-sprague", viewController.donna);
 router.get("/tony-dubravski", viewController.tony);
-// router.get("/betty-buddemeyer", viewController.betty);
 router.get("/carmen-minthorn", viewController.carmen);
 router.get("/traci-harrell", viewController.traci);
 router.get("/steve-keener", viewController.steve);
 router.get("/vanessa-irizarry", viewController.vanessa);
 router.get("/susan-ellsworth", viewController.susan);
-// router.get("/scott-sharp", viewController.scott);
+router.get("/kortney-austin", viewController.kortney);
 router.get("/lorrie-lovett", viewController.lorrie);
 router.get("/idx", viewController.idx);
 
